@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftScanner1
 //
-//  Created by Tim Skapek on 9/6/19.
+//  Created by Tim Skapek and Jackson Hubbard on 9/6/19.
 //  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
 
