@@ -15,6 +15,22 @@
 		038B98CC23234E07007E3558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038B98CA23234E07007E3558 /* LaunchScreen.storyboard */; };
 		038B98D723234E07007E3558 /* SwiftScanner1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98D623234E07007E3558 /* SwiftScanner1Tests.swift */; };
 		038B98E223234E07007E3558 /* SwiftScanner1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98E123234E07007E3558 /* SwiftScanner1UITests.swift */; };
+		038B98F523235AE2007E3558 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98F423235AE2007E3558 /* Accelerate.framework */; };
+		038B98F723235AE9007E3558 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98F623235AE9007E3558 /* AVFoundation.framework */; };
+		038B98F923235AF0007E3558 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98F823235AF0007E3558 /* CoreImage.framework */; };
+		038B98FB23235AF7007E3558 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98FA23235AF7007E3558 /* CoreGraphics.framework */; };
+		038B98FD23235B00007E3558 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98FC23235B00007E3558 /* CoreMedia.framework */; };
+		038B98FF23235B08007E3558 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B98FE23235B08007E3558 /* CoreVideo.framework */; };
+		038B990123235B10007E3558 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990023235B10007E3558 /* ExternalAccessory.framework */; };
+		038B990323235B19007E3558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990223235B19007E3558 /* Foundation.framework */; };
+		038B990523235B20007E3558 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990423235B20007E3558 /* ImageIO.framework */; };
+		038B990723235B2E007E3558 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990623235B2E007E3558 /* Metal.framework */; };
+		038B990923235B37007E3558 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990823235B37007E3558 /* MetalPerformanceShaders.framework */; };
+		038B990B23235B41007E3558 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990A23235B41007E3558 /* OpenGLES.framework */; };
+		038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990C23235B4A007E3558 /* QuartzCore.framework */; };
+		038B990F23235B53007E3558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990E23235B53007E3558 /* UIKit.framework */; };
+		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
+		038B99132323D0D9007E3558 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B99122323D0D9007E3558 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,22 @@
 		038B98DD23234E07007E3558 /* SwiftScanner1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScanner1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		038B98E123234E07007E3558 /* SwiftScanner1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScanner1UITests.swift; sourceTree = "<group>"; };
 		038B98E323234E07007E3558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		038B98F423235AE2007E3558 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		038B98F623235AE9007E3558 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		038B98F823235AF0007E3558 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		038B98FA23235AF7007E3558 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		038B98FC23235B00007E3558 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		038B98FE23235B08007E3558 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		038B990023235B10007E3558 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		038B990223235B19007E3558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		038B990423235B20007E3558 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		038B990623235B2E007E3558 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		038B990823235B37007E3558 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		038B990A23235B41007E3558 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		038B990C23235B4A007E3558 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		038B990E23235B53007E3558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		038B99122323D0D9007E3558 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */,
+				038B990F23235B53007E3558 /* UIKit.framework in Frameworks */,
+				038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */,
+				038B990B23235B41007E3558 /* OpenGLES.framework in Frameworks */,
+				038B990923235B37007E3558 /* MetalPerformanceShaders.framework in Frameworks */,
+				038B990723235B2E007E3558 /* Metal.framework in Frameworks */,
+				038B990523235B20007E3558 /* ImageIO.framework in Frameworks */,
+				038B990323235B19007E3558 /* Foundation.framework in Frameworks */,
+				038B990123235B10007E3558 /* ExternalAccessory.framework in Frameworks */,
+				038B98FF23235B08007E3558 /* CoreVideo.framework in Frameworks */,
+				038B98FD23235B00007E3558 /* CoreMedia.framework in Frameworks */,
+				038B98FB23235AF7007E3558 /* CoreGraphics.framework in Frameworks */,
+				038B98F923235AF0007E3558 /* CoreImage.framework in Frameworks */,
+				038B98F723235AE9007E3558 /* AVFoundation.framework in Frameworks */,
+				038B98F523235AE2007E3558 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,7 @@
 				038B98D523234E07007E3558 /* SwiftScanner1Tests */,
 				038B98E023234E07007E3558 /* SwiftScanner1UITests */,
 				038B98BD23234E06007E3558 /* Products */,
+				038B98F323235AE2007E3558 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +151,7 @@
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				038B99122323D0D9007E3558 /* File.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
@@ -126,6 +175,28 @@
 				038B98E323234E07007E3558 /* Info.plist */,
 			);
 			path = SwiftScanner1UITests;
+			sourceTree = "<group>";
+		};
+		038B98F323235AE2007E3558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038B991023235B5F007E3558 /* VideoToolbox.framework */,
+				038B990E23235B53007E3558 /* UIKit.framework */,
+				038B990C23235B4A007E3558 /* QuartzCore.framework */,
+				038B990A23235B41007E3558 /* OpenGLES.framework */,
+				038B990823235B37007E3558 /* MetalPerformanceShaders.framework */,
+				038B990623235B2E007E3558 /* Metal.framework */,
+				038B990423235B20007E3558 /* ImageIO.framework */,
+				038B990223235B19007E3558 /* Foundation.framework */,
+				038B990023235B10007E3558 /* ExternalAccessory.framework */,
+				038B98FE23235B08007E3558 /* CoreVideo.framework */,
+				038B98FC23235B00007E3558 /* CoreMedia.framework */,
+				038B98FA23235AF7007E3558 /* CoreGraphics.framework */,
+				038B98F823235AF0007E3558 /* CoreImage.framework */,
+				038B98F623235AE9007E3558 /* AVFoundation.framework */,
+				038B98F423235AE2007E3558 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +267,7 @@
 				TargetAttributes = {
 					038B98BB23234E06007E3558 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					038B98D123234E07007E3558 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
+				038B99132323D0D9007E3558 /* File.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 			);
@@ -436,7 +509,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +519,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,7 +530,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
