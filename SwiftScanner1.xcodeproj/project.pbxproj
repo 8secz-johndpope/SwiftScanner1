@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
+		0367DB632328A4A500FA872C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367DB622328A4A500FA872C /* File.swift */; };
+		0367DB652328A4BA00FA872C /* StructureBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0367DB642328A4BA00FA872C /* StructureBridge.mm */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
 		038B98C223234E06007E3558 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C123234E06007E3558 /* FirstViewController.swift */; };
 		038B98C423234E06007E3558 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C323234E06007E3558 /* SecondViewController.swift */; };
@@ -56,6 +58,8 @@
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftScanner1-Bridging-Header.h"; sourceTree = "<group>"; };
+		0367DB622328A4A500FA872C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0367DB642328A4BA00FA872C /* StructureBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StructureBridge.mm; sourceTree = "<group>"; };
 		038B98BC23234E06007E3558 /* SwiftScanner1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftScanner1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038B98BF23234E06007E3558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038B98C123234E06007E3558 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
+				0367DB622328A4A500FA872C /* File.swift */,
+				0367DB642328A4BA00FA872C /* StructureBridge.mm */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
@@ -341,7 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
+				0367DB632328A4A500FA872C /* File.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
+				0367DB652328A4BA00FA872C /* StructureBridge.mm in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
