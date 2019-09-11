@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
-		03504FBF2323D9ED001EFB14 /* StructureBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03504FBE2323D9ED001EFB14 /* StructureBridge.mm */; };
-		03504FC12323DA84001EFB14 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FC02323DA84001EFB14 /* libz.1.dylib */; };
+		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
 		038B98C223234E06007E3558 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C123234E06007E3558 /* FirstViewController.swift */; };
 		038B98C423234E06007E3558 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C323234E06007E3558 /* SecondViewController.swift */; };
@@ -33,7 +32,6 @@
 		038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990C23235B4A007E3558 /* QuartzCore.framework */; };
 		038B990F23235B53007E3558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990E23235B53007E3558 /* UIKit.framework */; };
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
-		038B99132323D0D9007E3558 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B99122323D0D9007E3558 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,9 @@
 
 /* Begin PBXFileReference section */
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
-		03504FBE2323D9ED001EFB14 /* StructureBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StructureBridge.mm; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftScanner1-Bridging-Header.h"; sourceTree = "<group>"; };
 		038B98BC23234E06007E3558 /* SwiftScanner1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftScanner1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038B98BF23234E06007E3558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038B98C123234E06007E3558 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 		038B990C23235B4A007E3558 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		038B990E23235B53007E3558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		038B99122323D0D9007E3558 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03504FC12323DA84001EFB14 /* libz.1.dylib in Frameworks */,
+				0367DB5E2328930900FA872C /* libz.tbd in Frameworks */,
 				03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */,
 				038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */,
 				038B990F23235B53007E3558 /* UIKit.framework in Frameworks */,
@@ -158,9 +156,8 @@
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
-				03504FBE2323D9ED001EFB14 /* StructureBridge.mm */,
+				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
-				038B99122323D0D9007E3558 /* File.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
@@ -189,6 +186,7 @@
 		038B98F323235AE2007E3558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0367DB5D2328930900FA872C /* libz.tbd */,
 				03504FC02323DA84001EFB14 /* libz.1.dylib */,
 				03504FB92323D91F001EFB14 /* Structure.framework */,
 				038B991023235B5F007E3558 /* VideoToolbox.framework */,
@@ -343,9 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
-				038B99132323D0D9007E3558 /* File.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
-				03504FBF2323D9ED001EFB14 /* StructureBridge.mm in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,16 +519,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7BPK5C72;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Structure.framework/Headers";
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
@@ -548,16 +547,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7BPK5C72;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Structure.framework/Headers";
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
