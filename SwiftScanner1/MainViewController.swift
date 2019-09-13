@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  MainViewController.swift
 //  SwiftScanner1
 //
 //  Created by Jackson Hubbard on 9/13/19.
@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    @IBAction func startScan(_ sender: Any) {
+        
+        performSegue(withIdentifier: "mainToInfoSegue", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

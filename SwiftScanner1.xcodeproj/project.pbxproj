@@ -34,7 +34,7 @@
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
-		65C3183A232BFA9400A4373B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C31839232BFA9400A4373B /* ThirdViewController.swift */; };
+		65382A02232C56F0002AA380 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65382A01232C56F0002AA380 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +90,7 @@
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		65C31839232BFA9400A4373B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		65382A01232C56F0002AA380 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
-				65C31839232BFA9400A4373B /* ThirdViewController.swift */,
+				65382A01232C56F0002AA380 /* MainViewController.swift */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
@@ -349,9 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65382A02232C56F0002AA380 /* MainViewController.swift in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
-				65C3183A232BFA9400A4373B /* ThirdViewController.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
