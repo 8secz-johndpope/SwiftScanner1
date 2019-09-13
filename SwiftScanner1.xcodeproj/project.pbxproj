@@ -32,6 +32,7 @@
 		038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990C23235B4A007E3558 /* QuartzCore.framework */; };
 		038B990F23235B53007E3558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990E23235B53007E3558 /* UIKit.framework */; };
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
+		65C3183A232BFA9400A4373B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C31839232BFA9400A4373B /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		038B990C23235B4A007E3558 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		038B990E23235B53007E3558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		65C31839232BFA9400A4373B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
+				65C31839232BFA9400A4373B /* ThirdViewController.swift */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
@@ -342,6 +345,7 @@
 			files = (
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
+				65C3183A232BFA9400A4373B /* ThirdViewController.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
