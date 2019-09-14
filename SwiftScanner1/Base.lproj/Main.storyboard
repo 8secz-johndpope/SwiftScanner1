@@ -96,14 +96,15 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="DHs-Gs-rgU" kind="relationship" relationship="viewControllers" id="cFb-r6-3tG"/>
+                        <segue destination="3Km-6u-gFy" kind="relationship" relationship="viewControllers" id="Ihv-yJ-94Y"/>
+                        <segue destination="DHs-Gs-rgU" kind="relationship" relationship="viewControllers" id="7xY-5M-1n2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Item-->
         <scene sceneID="g4Z-Nb-5VM">
             <objects>
                 <viewController id="3Km-6u-gFy" customClass="MainViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,6 +133,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w3w-S0-MCD"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Fso-Bp-VkB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upp-6o-rUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,6 +321,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dL2-9h-n3o"/>
+        <segue reference="spH-dl-iAt"/>
     </inferredMetricsTieBreakers>
 </document>
