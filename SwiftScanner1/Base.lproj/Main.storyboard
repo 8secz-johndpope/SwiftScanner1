@@ -96,6 +96,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="DHs-Gs-rgU" kind="relationship" relationship="viewControllers" id="cFb-r6-3tG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -144,38 +145,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-kc-90W">
-                                <rect key="frame" x="327" y="244" width="370" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-kc-90W">
+                                <rect key="frame" x="327" y="241" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's injury" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-rP-bKt">
-                                <rect key="frame" x="327" y="297" width="370" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's injury" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-rP-bKt">
+                                <rect key="frame" x="327" y="293" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-kO-6aG">
-                                <rect key="frame" x="327" y="192" width="370" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-kO-6aG">
+                                <rect key="frame" x="327" y="189" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-vb-uQk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-vb-uQk">
                                 <rect key="frame" x="20" y="67" width="984" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9vt-e0-EBO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-io-Ugd">
-                                <rect key="frame" x="327" y="140" width="370" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-io-Ugd">
+                                <rect key="frame" x="327" y="137" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-eq-ctI">
-                                <rect key="frame" x="438" y="364" width="149" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-eq-ctI">
+                                <rect key="frame" x="438" y="361" width="149" height="41"/>
                                 <color key="backgroundColor" red="0.34344728177675454" green="0.68244866043876007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Begin Scan">
@@ -192,10 +196,12 @@
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="nLj-kc-90W" secondAttribute="trailing" constant="327" id="6E5-ca-QVL"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="E9m-kq-kP6"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="s7Q-kO-6aG" secondAttribute="trailing" constant="327" id="GEd-hu-hlX"/>
+                            <constraint firstItem="WDt-vb-uQk" firstAttribute="centerX" secondItem="e7d-io-Ugd" secondAttribute="centerX" id="GFR-ZA-vd6"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="3gX-rP-bKt" secondAttribute="trailing" constant="327" id="NE7-5G-E7G"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="Ncd-dg-U6x"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="r0r-eq-ctI" secondAttribute="trailing" constant="437" id="P4V-Nr-j1n"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="QPt-eE-Tg3"/>
+                            <constraint firstItem="WDt-vb-uQk" firstAttribute="top" secondItem="0of-kg-PG7" secondAttribute="top" constant="47" id="Ryc-Nt-Fs2"/>
                             <constraint firstItem="s7Q-kO-6aG" firstAttribute="top" secondItem="e7d-io-Ugd" secondAttribute="bottom" constant="19" id="Uez-sA-RPb"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="V6O-oa-nqd"/>
                             <constraint firstItem="r0r-eq-ctI" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="438" id="WTK-0J-Ax9"/>
@@ -205,6 +211,7 @@
                             <constraint firstItem="e7d-io-Ugd" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="gsx-lq-Gvp"/>
                             <constraint firstItem="e7d-io-Ugd" firstAttribute="top" secondItem="WDt-vb-uQk" secondAttribute="bottom" constant="35" id="lSv-MR-WRR"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="oD2-Yq-neL"/>
+                            <constraint firstItem="WDt-vb-uQk" firstAttribute="leading" secondItem="y0S-AB-wbI" secondAttribute="leadingMargin" id="oGD-ws-Czn"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="t0k-ML-qKL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0of-kg-PG7"/>
@@ -276,6 +283,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxZ-bJ-GwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1191.796875" y="1639.84375"/>
+        </scene>
+        <!--SampleScannerTest-->
+        <scene sceneID="cr7-fF-4Bi">
+            <objects>
+                <viewController title="SampleScannerTest" id="DHs-Gs-rgU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WHd-2W-7tx" customClass="SampleScannerTest" customModule="SwiftScanner1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-Dd-06R" customClass="XibView" customModule="SwiftScanner1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SampleScannerTest"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ynp-Tc-UkU"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SampleScannerTest"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="01t-40-3Dh" userLabel="Scanning"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVx-qB-BjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12.3046875" y="-973.4375"/>
         </scene>
     </scenes>
     <resources>

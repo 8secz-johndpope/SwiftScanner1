@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0333D090232C8EF200CE4EE3 /* SampleScannerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */; };
+		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0333D08F232C8EF200CE4EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../../Downloads/Structure SDK/Samples/Scanner/Base.lproj/SampleScannerTest.xib"; sourceTree = "<group>"; };
+		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -166,6 +170,8 @@
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				65382A01232C56F0002AA380 /* MainViewController.swift */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
+				0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */,
+				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
@@ -324,6 +330,7 @@
 			files = (
 				038B98CC23234E07007E3558 /* LaunchScreen.storyboard in Resources */,
 				038B98C923234E07007E3558 /* Assets.xcassets in Resources */,
+				0333D090232C8EF200CE4EE3 /* SampleScannerTest.xib in Resources */,
 				038B98C723234E06007E3558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 				65382A02232C56F0002AA380 /* MainViewController.swift in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
+				0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
@@ -390,6 +398,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0333D08F232C8EF200CE4EE3 /* Base */,
+			);
+			name = SampleScannerTest.xib;
+			sourceTree = "<group>";
+		};
 		038B98C523234E06007E3558 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
