@@ -11,10 +11,23 @@ import UIKit
 class ScanViewController: UIViewController, STSensorControllerDelegate {
 
     @IBAction func startScanButton(_ sender: Any) {
+        let streamingOptions: [AnyHashable: Any] = [
+            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
+            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
+            kSTHoleFilterEnabledKey: true
+        ]
+        do {
+            try sharedController.startStreaming(options: streamingOptions)
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
     
     @IBAction func stopScanButton(_ sender: Any) {
+        sharedController.stopStreaming()
+
     }
+    
     
     @IBOutlet weak var nameLabel: UILabel!
 
@@ -47,21 +60,21 @@ class ScanViewController: UIViewController, STSensorControllerDelegate {
     
     
     // Test button method
-    @objc func startButtonAction(sender: UIButton!){
-        let streamingOptions: [AnyHashable: Any] = [
-            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
-            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
-            kSTHoleFilterEnabledKey: true
-        ]
-        do {
-            try sharedController.startStreaming(options: streamingOptions)
-        } catch let error as NSError {
-            print(error.description)
-        }
-    }
-    @objc func stopButtonAction(sender: UIButton!){
-        sharedController.stopStreaming()
-    }
+//    @objc func startButtonAction(sender: UIButton!){
+//        let streamingOptions: [AnyHashable: Any] = [
+//            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
+//            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
+//            kSTHoleFilterEnabledKey: true
+//        ]
+//        do {
+//            try sharedController.startStreaming(options: streamingOptions)
+//        } catch let error as NSError {
+//            print(error.description)
+//        }
+//    }
+//    @objc func stopButtonAction(sender: UIButton!){
+//        sharedController.stopStreaming()
+//    }
     
     
     // Necessary implemented Structure methods
