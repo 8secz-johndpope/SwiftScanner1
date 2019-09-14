@@ -245,6 +245,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="startScan:" destination="kh3-KY-DV8" eventType="touchUpInside" id="ME8-w6-pHV"/>
                                     <action selector="startScanButton:" destination="kh3-KY-DV8" eventType="touchUpInside" id="01g-BN-wQO"/>
                                 </connections>
                             </button>

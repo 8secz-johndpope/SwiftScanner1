@@ -10,23 +10,26 @@ import UIKit
 
 class ScanViewController: UIViewController, STSensorControllerDelegate {
 
-    @IBAction func startScanButton(_ sender: Any) {
-        let streamingOptions: [AnyHashable: Any] = [
-            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
-            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
-            kSTHoleFilterEnabledKey: true
-        ]
-        do {
-            try sharedController.startStreaming(options: streamingOptions)
-        } catch let error as NSError {
-            print(error.description)
-        }
-    }
     
-    @IBAction func stopScanButton(_ sender: Any) {
-        sharedController.stopStreaming()
-
-    }
+//    @IBAction func startScanButton(_ sender: Any) {
+//        let streamingOptions: [AnyHashable: Any] = [
+//            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
+//            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
+//            kSTHoleFilterEnabledKey: true
+//        ]
+//        do {
+//            try sharedController.startStreaming(options: streamingOptions)
+//        } catch let error as NSError {
+//            print(error.description)
+//        }
+//
+//        self.startButtonAction(sender: <#T##UIButton?#>)
+//    }
+    
+//    @IBAction func stopScanButton(_ sender: Any) {
+//        self.stopButtonAction(sender: <#T##UIButton?#>)
+//
+//    }
     
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -51,6 +54,19 @@ class ScanViewController: UIViewController, STSensorControllerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let startButton = UIButton(frame: CGRect(x: 100, y:100, width:100, height:50))
+        startButton.backgroundColor = .green
+        startButton.setTitle("Start Scan", for: [])
+        startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
+        
+        let stopButton = UIButton(frame: CGRect(x: 500, y:500, width:100, height:50))
+        stopButton.backgroundColor = .red
+        stopButton.setTitle("End Scan", for:[])
+        stopButton.addTarget(self, action: #selector(stopButtonAction), for: .touchUpInside)
+        
+        self.view.addSubview(startButton)
+        self.view.addSubview(stopButton)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,22 +75,22 @@ class ScanViewController: UIViewController, STSensorControllerDelegate {
     }
     
     
-    // Test button method
-//    @objc func startButtonAction(sender: UIButton!){
-//        let streamingOptions: [AnyHashable: Any] = [
-//            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
-//            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
-//            kSTHoleFilterEnabledKey: true
-//        ]
-//        do {
-//            try sharedController.startStreaming(options: streamingOptions)
-//        } catch let error as NSError {
-//            print(error.description)
-//        }
-//    }
-//    @objc func stopButtonAction(sender: UIButton!){
-//        sharedController.stopStreaming()
-//    }
+     //Test button method
+    @objc func startButtonAction(sender: UIButton!){
+        let streamingOptions: [AnyHashable: Any] = [
+            kSTStreamConfigKey: NSNumber(value: STStreamConfig.depth640x480.rawValue as Int),
+            kSTFrameSyncConfigKey: NSNumber(value: STFrameSyncConfig.depthAndRgb.rawValue as Int),
+            kSTHoleFilterEnabledKey: true
+        ]
+        do {
+            try sharedController.startStreaming(options: streamingOptions)
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    @objc func stopButtonAction(sender: UIButton!){
+        sharedController.stopStreaming()
+    }
     
     
     // Necessary implemented Structure methods
