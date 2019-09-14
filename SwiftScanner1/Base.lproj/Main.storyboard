@@ -97,7 +97,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="3Km-6u-gFy" kind="relationship" relationship="viewControllers" id="Ihv-yJ-94Y"/>
-                        <segue destination="DHs-Gs-rgU" kind="relationship" relationship="viewControllers" id="7xY-5M-1n2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -285,35 +284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxZ-bJ-GwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1191.796875" y="1639.84375"/>
-        </scene>
-        <!--SampleScannerTest-->
-        <scene sceneID="cr7-fF-4Bi">
-            <objects>
-                <viewController title="SampleScannerTest" id="DHs-Gs-rgU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WHd-2W-7tx" customClass="SampleScannerTest" customModule="SwiftScanner1" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-Dd-06R" customClass="XibView" customModule="SwiftScanner1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SampleScannerTest"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ynp-Tc-UkU"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SampleScannerTest"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="01t-40-3Dh" userLabel="Scanning"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OVx-qB-BjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-12.3046875" y="-973.4375"/>
         </scene>
     </scenes>
     <resources>
