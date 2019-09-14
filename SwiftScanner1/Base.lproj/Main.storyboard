@@ -96,7 +96,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="3Km-6u-gFy" kind="relationship" relationship="viewControllers" id="Ihv-yJ-94Y"/>
+                        <segue destination="3Km-6u-gFy" kind="relationship" relationship="viewControllers" id="aB9-UW-gLg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -132,7 +132,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w3w-S0-MCD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Fso-Bp-VkB"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="iqy-qE-WuR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upp-6o-rUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,40 +147,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-kc-90W">
-                                <rect key="frame" x="327" y="241" width="370" height="33"/>
+                                <rect key="frame" x="327" y="235" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's injury" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-rP-bKt">
-                                <rect key="frame" x="327" y="293" width="370" height="33"/>
+                                <rect key="frame" x="327" y="287" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-kO-6aG">
-                                <rect key="frame" x="327" y="189" width="370" height="33"/>
+                                <rect key="frame" x="327" y="183" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-vb-uQk">
-                                <rect key="frame" x="20" y="67" width="984" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="9vt-e0-EBO"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-vb-uQk">
+                                <rect key="frame" x="20" y="67" width="984" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-io-Ugd">
-                                <rect key="frame" x="327" y="137" width="370" height="33"/>
+                                <rect key="frame" x="327" y="131" width="370" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-eq-ctI">
-                                <rect key="frame" x="438" y="361" width="149" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-eq-ctI">
+                                <rect key="frame" x="470" y="389" width="117" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.34344728177675454" green="0.68244866043876007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Begin Scan">
@@ -195,24 +193,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="nLj-kc-90W" secondAttribute="trailing" constant="327" id="6E5-ca-QVL"/>
+                            <constraint firstItem="WDt-vb-uQk" firstAttribute="top" secondItem="0of-kg-PG7" secondAttribute="top" constant="47" id="9u8-Ts-MAb"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="E9m-kq-kP6"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="s7Q-kO-6aG" secondAttribute="trailing" constant="327" id="GEd-hu-hlX"/>
-                            <constraint firstItem="WDt-vb-uQk" firstAttribute="centerX" secondItem="e7d-io-Ugd" secondAttribute="centerX" id="GFR-ZA-vd6"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="3gX-rP-bKt" secondAttribute="trailing" constant="327" id="NE7-5G-E7G"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="Ncd-dg-U6x"/>
-                            <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="r0r-eq-ctI" secondAttribute="trailing" constant="437" id="P4V-Nr-j1n"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="QPt-eE-Tg3"/>
-                            <constraint firstItem="WDt-vb-uQk" firstAttribute="top" secondItem="0of-kg-PG7" secondAttribute="top" constant="47" id="Ryc-Nt-Fs2"/>
                             <constraint firstItem="s7Q-kO-6aG" firstAttribute="top" secondItem="e7d-io-Ugd" secondAttribute="bottom" constant="19" id="Uez-sA-RPb"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="V6O-oa-nqd"/>
-                            <constraint firstItem="r0r-eq-ctI" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="438" id="WTK-0J-Ax9"/>
-                            <constraint firstItem="r0r-eq-ctI" firstAttribute="top" secondItem="3gX-rP-bKt" secondAttribute="bottom" constant="35" id="bEq-z3-Rox"/>
                             <constraint firstItem="s7Q-kO-6aG" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="dNR-iT-icn"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="e7d-io-Ugd" secondAttribute="trailing" constant="327" id="fzH-pW-wCz"/>
                             <constraint firstItem="e7d-io-Ugd" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="gsx-lq-Gvp"/>
                             <constraint firstItem="e7d-io-Ugd" firstAttribute="top" secondItem="WDt-vb-uQk" secondAttribute="bottom" constant="35" id="lSv-MR-WRR"/>
                             <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="oD2-Yq-neL"/>
-                            <constraint firstItem="WDt-vb-uQk" firstAttribute="leading" secondItem="y0S-AB-wbI" secondAttribute="leadingMargin" id="oGD-ws-Czn"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="t0k-ML-qKL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0of-kg-PG7"/>
@@ -251,6 +244,9 @@
                                 <state key="normal" title="Start Scan">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startScanButton:" destination="kh3-KY-DV8" eventType="touchUpInside" id="01g-BN-wQO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-5X-Y6M">
                                 <rect key="frame" x="529" y="669" width="168" height="48"/>
@@ -260,6 +256,9 @@
                                 <state key="normal" title="Stop Scan">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopScanButton:" destination="kh3-KY-DV8" eventType="touchUpInside" id="fvZ-cb-AU7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Av-si-mvw">
                                 <rect key="frame" x="20" y="20" width="168" height="48"/>

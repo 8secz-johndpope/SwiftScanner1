@@ -164,11 +164,11 @@
 			isa = PBXGroup;
 			children = (
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
+				65382A01232C56F0002AA380 /* MainViewController.swift */,
 				653829FD232C4730002AA380 /* UserInputViewController.swift */,
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
-				65382A01232C56F0002AA380 /* MainViewController.swift */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
@@ -547,7 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,7 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
