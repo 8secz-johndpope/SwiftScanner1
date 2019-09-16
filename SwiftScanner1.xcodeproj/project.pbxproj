@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0318D334232FAE0B0048E09A /* ViewController+OpenGL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0318D333232FAE0B0048E09A /* ViewController+OpenGL.mm */; };
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
@@ -36,7 +37,6 @@
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
 		65382A02232C56F0002AA380 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65382A01232C56F0002AA380 /* MainViewController.swift */; };
-		65EFBDEA232F36DE0032F578 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0318D332232FADFF0048E09A /* ViewController+OpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+OpenGL.h"; sourceTree = "<group>"; };
+		0318D333232FAE0B0048E09A /* ViewController+OpenGL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ViewController+OpenGL.mm"; sourceTree = "<group>"; };
 		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				0318D332232FADFF0048E09A /* ViewController+OpenGL.h */,
+				0318D333232FAE0B0048E09A /* ViewController+OpenGL.mm */,
 				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
@@ -371,8 +375,8 @@
 				0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
-				65EFBDEA232F36DE0032F578 /* InstructionsViewController.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
+				0318D334232FAE0B0048E09A /* ViewController+OpenGL.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
+				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

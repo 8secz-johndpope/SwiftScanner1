@@ -13,4 +13,8 @@
 #import "Structure/Structure.h"
 #import "Structure/StructureSLAM.h"
 
+// Import all .h files from sample scanner
+#import "ViewController+OpenGL.h"
+
+
 #endif /* Header_h */
