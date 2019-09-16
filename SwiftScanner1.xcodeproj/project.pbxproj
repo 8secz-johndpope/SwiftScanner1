@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0333D090232C8EF200CE4EE3 /* SampleScannerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */; };
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
@@ -37,6 +36,7 @@
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
 		65382A02232C56F0002AA380 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65382A01232C56F0002AA380 /* MainViewController.swift */; };
+		65EFBDEA232F36DE0032F578 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0333D08F232C8EF200CE4EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../../Downloads/Structure SDK/Samples/Scanner/Base.lproj/SampleScannerTest.xib"; sourceTree = "<group>"; };
 		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
@@ -95,6 +94,12 @@
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		65382A01232C56F0002AA380 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
+		65EFBDED232F3AD40032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kevin and DJ.jpg"; path = "../../kevin and DJ.jpg"; sourceTree = "<group>"; };
+		65EFBDEF232F3AE30032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
+		65EFBDF1232F3B490032F578 /* kevin and DJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kevin and DJ.png"; sourceTree = "<group>"; };
+		65EFBDF3232F3B580032F578 /* kevin and DJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kevin and DJ.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +175,9 @@
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				0367DB61232893C700FA872C /* SwiftScanner1-Bridging-Header.h */,
-				0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
@@ -201,6 +206,11 @@
 		038B98F323235AE2007E3558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65EFBDF1232F3B490032F578 /* kevin and DJ.png */,
+				65EFBDF3232F3B580032F578 /* kevin and DJ.png */,
+				65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */,
+				65EFBDED232F3AD40032F578 /* kevin and DJ.jpg */,
+				65EFBDEF232F3AE30032F578 /* kevin and DJ.jpg */,
 				0367DB5D2328930900FA872C /* libz.tbd */,
 				03504FC02323DA84001EFB14 /* libz.1.dylib */,
 				03504FB92323D91F001EFB14 /* Structure.framework */,
@@ -330,7 +340,6 @@
 			files = (
 				038B98CC23234E07007E3558 /* LaunchScreen.storyboard in Resources */,
 				038B98C923234E07007E3558 /* Assets.xcassets in Resources */,
-				0333D090232C8EF200CE4EE3 /* SampleScannerTest.xib in Resources */,
 				038B98C723234E06007E3558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +371,7 @@
 				0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
+				65EFBDEA232F36DE0032F578 /* InstructionsViewController.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,14 +408,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0333D08E232C8EF200CE4EE3 /* SampleScannerTest.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0333D08F232C8EF200CE4EE3 /* Base */,
-			);
-			name = SampleScannerTest.xib;
-			sourceTree = "<group>";
-		};
 		038B98C523234E06007E3558 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

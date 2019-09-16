@@ -30,12 +30,12 @@ class ScanViewController: UIViewController, STSensorControllerDelegate {
 //        self.stopButtonAction(sender: <#T##UIButton?#>)
 //
 //    }
-    
+    var sharedController: STSensorController
+
     
     @IBOutlet weak var nameLabel: UILabel!
 
     
-    var sharedController: STSensorController
     
     required init?(coder decoder: NSCoder){
         
@@ -54,25 +54,25 @@ class ScanViewController: UIViewController, STSensorControllerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let startButton = UIButton(frame: CGRect(x: 100, y:100, width:100, height:50))
-        startButton.backgroundColor = .green
-        startButton.setTitle("Start Scan", for: [])
-        startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
-        
-        let stopButton = UIButton(frame: CGRect(x: 500, y:500, width:100, height:50))
-        stopButton.backgroundColor = .red
-        stopButton.setTitle("End Scan", for:[])
-        stopButton.addTarget(self, action: #selector(stopButtonAction), for: .touchUpInside)
-        
-        self.view.addSubview(startButton)
-        self.view.addSubview(stopButton)
+//        let startButton = UIButton(frame: CGRect(x: 100, y:100, width:100, height:50))
+//        startButton.backgroundColor = .green
+//        startButton.setTitle("Start Scan", for: [])
+//        startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
+//
+//        let stopButton = UIButton(frame: CGRect(x: 500, y:500, width:100, height:50))
+//        stopButton.backgroundColor = .red
+//        stopButton.setTitle("End Scan", for:[])
+//        stopButton.addTarget(self, action: #selector(stopButtonAction), for: .touchUpInside)
+//
+//        self.view.addSubview(startButton)
+//        self.view.addSubview(stopButton)
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        //  viewDidAppear will run each time view appears. use this instead of viewDidLoad because the view isn't completely loaded yet and we want to change the label as it loads
-        nameLabel.text = "Begin scanning " + athlete
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        //  viewDidAppear will run each time view appears. use this instead of viewDidLoad because the view isn't completely loaded yet and we want to change the label as it loads
+//        nameLabel.text = "Begin scanning " + athlete
+//    }
     
     
      //Test button method
