@@ -22,10 +22,7 @@ class UserInputViewController: UIViewController {
     @IBOutlet weak var inputInjuryDesc: UITextField!
     
     
-    @IBAction func beginScanButton(_ sender: Any) {
-        performSegue(withIdentifier: "inputToScanSegue", sender: self)
-        
-    }
+    
     
     @IBAction func beginScan(_ sender: Any) {
         if(inputSchool.text != "") {
@@ -45,7 +42,7 @@ class UserInputViewController: UIViewController {
             injuryDesc = inputInjuryDesc.text!
         }
         
-        performSegue(withIdentifier: "inputToScanSegue", sender: self)
+        performSegue(withIdentifier: "infoToInstructions", sender: self)
 
     }
     
