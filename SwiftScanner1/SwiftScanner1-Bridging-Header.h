@@ -1,20 +1,17 @@
 //
-//  Header.h
-//  SwiftScanner1
-//
-//  Created by Tim Skapek on 9/10/19.
-//  Copyright © 2019 Protect3d Inc. All rights reserved.
+//  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#ifndef Header_h
-#define Header_h
-
-#define HAS_LIBCXX
-#import "Structure/Structure.h"
-#import "Structure/StructureSLAM.h"
-
-// Import all .h files from sample scanner
+#import "ViewController.h"
+#import "ViewpointController.h"
+#import "CustomShaders.h"
+#import "ViewController+CaptureSession.h"
 #import "ViewController+OpenGL.h"
-
-
-#endif /* Header_h */
+#import "ViewController+SLAM.h"
+#import "ViewUtilities.h"
+#import "SettingsPopupView.h"
+#import "MeshViewController.h"
+#import "MeshRenderer.h"
+#import "CalibrationOverlay.h"
+#import "CustomUIKitStyles.h"
+#import "EAGLView.h"
