@@ -48,7 +48,8 @@
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
-		65382A02232C56F0002AA380 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65382A01232C56F0002AA380 /* MainViewController.swift */; };
+		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
+		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +132,8 @@
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		65382A01232C56F0002AA380 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
+		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
 		65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
 		65EFBDED232F3AD40032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kevin and DJ.jpg"; path = "../../kevin and DJ.jpg"; sourceTree = "<group>"; };
@@ -241,13 +243,14 @@
 			children = (
 				037EE9082331061800B36C15 /* SDK Scanner */,
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
-				65382A01232C56F0002AA380 /* MainViewController.swift */,
 				653829FD232C4730002AA380 /* UserInputViewController.swift */,
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
+				6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */,
 				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
@@ -440,7 +443,6 @@
 				037EE8E12331036A00B36C15 /* ViewController.mm in Sources */,
 				037EE8F7233105CF00B36C15 /* SettingsPopupView.mm in Sources */,
 				037EE904233105DB00B36C15 /* ViewController+CaptureSession.mm in Sources */,
-				65382A02232C56F0002AA380 /* MainViewController.swift in Sources */,
 				037EE903233105DB00B36C15 /* ViewController+SLAM.mm in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				037EE8EE233105A300B36C15 /* EAGLView.mm in Sources */,
@@ -455,7 +457,9 @@
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
+				6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */,
 				037EE905233105DB00B36C15 /* ViewUtilities.mm in Sources */,
+				6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */,
 				037EE902233105DB00B36C15 /* ViewController+OpenGL.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

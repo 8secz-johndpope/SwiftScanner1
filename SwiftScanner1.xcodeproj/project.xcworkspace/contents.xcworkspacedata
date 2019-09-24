@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tskapek/Library/Autosave Information/SwiftScanner1/SwiftScanner1/ViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/tskapek/Library/Autosave Information/SwiftScanner1/SwiftScanner1/ViewController.mm">
-   </FileRef>
-   <FileRef
-      location = "self:">
+      location = "self:SwiftScanner1.xcodeproj">
    </FileRef>
 </Workspace>
