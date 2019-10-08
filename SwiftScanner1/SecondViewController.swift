@@ -10,6 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController, STSensorControllerDelegate {
     
+    @IBAction func confirmScanButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "scanningToConfirmScanSegue", sender: self)
+    }
+    
+    
     var sharedController: STSensorController
     
     required init?(coder decoder: NSCoder){

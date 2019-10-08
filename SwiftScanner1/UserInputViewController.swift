@@ -13,7 +13,7 @@ var team = ""
 var athlete = ""
 var injuryDesc = ""
 
-class UserInputViewController: UIViewController {
+class UserInputViewController: UIViewController, UITableViewCell {
 
     
     @IBOutlet weak var inputSchool: UITextField!
@@ -53,7 +53,30 @@ class UserInputViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+   
+    @IBOutlet var padTypes: [UIButton]!
+    
+    @IBAction func handleSelection(_ sender: UIButton) {
+        // handles when you click on the select pad type by expanding/hiding drop down
+        padTypes.forEach{ (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+            
+        }
+    }
+    
+    
+    @IBAction func citySelected(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

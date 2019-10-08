@@ -48,6 +48,14 @@
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
+		653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */; };
+		653F3B89234ADDAC00D0B4AA /* ConfirmScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */; };
+		653F3B8B234B522B00D0B4AA /* AdditionalScanInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */; };
+		653F3B8D234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */; };
+		653F3B8F234B5D3D00D0B4AA /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B8E234B5D3D00D0B4AA /* OrdersViewController.swift */; };
+		653F3B91234B62AC00D0B4AA /* PadDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */; };
+		653F3B93234B668900D0B4AA /* ScanOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */; };
+		653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B94234B67DE00D0B4AA /* PadObject.swift */; };
 		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
 		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -132,6 +140,14 @@
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
+		653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmScanViewController.swift; sourceTree = "<group>"; };
+		653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalScanInfoViewController.swift; sourceTree = "<group>"; };
+		653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSubmittedConfirmViewController.swift; sourceTree = "<group>"; };
+		653F3B8E234B5D3D00D0B4AA /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadDatabaseViewController.swift; sourceTree = "<group>"; };
+		653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOrderTableViewCell.swift; sourceTree = "<group>"; };
+		653F3B94234B67DE00D0B4AA /* PadObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadObject.swift; sourceTree = "<group>"; };
 		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
 		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
 		65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
@@ -246,12 +262,20 @@
 				653829FD232C4730002AA380 /* UserInputViewController.swift */,
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
+				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */,
+				653F3B94234B67DE00D0B4AA /* PadObject.swift */,
+				653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */,
+				653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */,
+				653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */,
+				653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */,
 				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
 				6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */,
 				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
+				653F3B8E234B5D3D00D0B4AA /* OrdersViewController.swift */,
 				038B98C823234E07007E3558 /* Assets.xcassets */,
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
@@ -440,19 +464,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653F3B8D234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift in Sources */,
 				037EE8E12331036A00B36C15 /* ViewController.mm in Sources */,
+				653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */,
 				037EE8F7233105CF00B36C15 /* SettingsPopupView.mm in Sources */,
 				037EE904233105DB00B36C15 /* ViewController+CaptureSession.mm in Sources */,
+				653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */,
 				037EE903233105DB00B36C15 /* ViewController+SLAM.mm in Sources */,
+				653F3B91234B62AC00D0B4AA /* PadDatabaseViewController.swift in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				037EE8EE233105A300B36C15 /* EAGLView.mm in Sources */,
 				037EE8F1233105B800B36C15 /* MeshRenderer.mm in Sources */,
+				653F3B8F234B5D3D00D0B4AA /* OrdersViewController.swift in Sources */,
+				653F3B93234B668900D0B4AA /* ScanOrderTableViewCell.swift in Sources */,
 				037EE8ED233105A300B36C15 /* CalibrationOverlay.mm in Sources */,
 				037EE8EC233105A300B36C15 /* CustomUIKitStyles.mm in Sources */,
+				653F3B8B234B522B00D0B4AA /* AdditionalScanInfoViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
 				037EE906233105DB00B36C15 /* ViewpointController.mm in Sources */,
 				0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */,
 				037EE8F4233105C300B36C15 /* MeshViewController.mm in Sources */,
+				653F3B89234ADDAC00D0B4AA /* ConfirmScanViewController.swift in Sources */,
 				037EE8EB233105A300B36C15 /* CustomShaders.mm in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
