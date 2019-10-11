@@ -12,10 +12,20 @@ class Pad {
     
     var name: String
     var padType: String
+    var school: String
+    var team: String
+    var injuryDesc: String
+    var athleteNumber: Integer
     
-    init(name: String, padType: String ){
+    
+    // when user inputs all of this info in input screen, a new pad object is created globally that stores all of its information
+    init(name: String, padType: String, school: String, team: String, injuryDesc: String, athleteNumber: Integer ){
         self.name = name
         self.padType = padType
+        self.school = school
+        self.team = team
+        self.injuryDesc = injuryDesc
+        self.athleteNumber = athleteNumber
         
     }
 }

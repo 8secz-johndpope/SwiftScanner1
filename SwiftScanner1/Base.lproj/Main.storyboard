@@ -183,32 +183,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Position" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-kc-90W">
-                                <rect key="frame" x="327" y="235" width="370" height="33"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-rP-bKt">
-                                <rect key="frame" x="327" y="287" width="370" height="33"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-kO-6aG">
-                                <rect key="frame" x="327" y="183" width="370" height="33"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-vb-uQk">
                                 <rect key="frame" x="20" y="67" width="984" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-io-Ugd">
-                                <rect key="frame" x="327" y="131" width="370" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-kc-90W">
+                                <rect key="frame" x="327" y="117" width="370" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-kO-6aG">
+                                <rect key="frame" x="327" y="173" width="370" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Position" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaJ-Km-Zej">
+                                <rect key="frame" x="327" y="232" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZtS-ao-0yw">
+                                <rect key="frame" x="327" y="294" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -223,21 +225,16 @@
                                 </state>
                                 <connections>
                                     <action selector="beginScan:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="zfq-XH-lnt"/>
+                                    <action selector="beginScanButton:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="qf7-z9-xNo"/>
                                     <segue destination="am2-H2-AUV" kind="showDetail" identifier="infoToInstructions" id="5JD-E6-Y2p"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Injury description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUO-di-EQy">
-                                <rect key="frame" x="327" y="684" width="370" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-jA-KvN">
-                                <rect key="frame" x="327" y="356" width="370" height="30"/>
+                                <rect key="frame" x="327" y="356" width="370" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-RB-bNK">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Select Pad Type"/>
                                         <connections>
                                             <action selector="handleSelection:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="TdK-o4-VrP"/>
@@ -273,35 +270,36 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Injury description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUO-di-EQy">
+                                <rect key="frame" x="327" y="405" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lpa-jA-KvN" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="3FI-X4-9Hc"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="nLj-kc-90W" secondAttribute="trailing" constant="327" id="6E5-ca-QVL"/>
                             <constraint firstItem="WDt-vb-uQk" firstAttribute="top" secondItem="0of-kg-PG7" secondAttribute="top" constant="47" id="9u8-Ts-MAb"/>
-                            <constraint firstItem="3gX-rP-bKt" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="E9m-kq-kP6"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="s7Q-kO-6aG" secondAttribute="trailing" constant="327" id="GEd-hu-hlX"/>
                             <constraint firstItem="lpa-jA-KvN" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="ILB-5V-S5m"/>
-                            <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="3gX-rP-bKt" secondAttribute="trailing" constant="327" id="NE7-5G-E7G"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="Ncd-dg-U6x"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="QPt-eE-Tg3"/>
                             <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="lpa-jA-KvN" secondAttribute="trailing" constant="327" id="T1m-ix-H5P"/>
-                            <constraint firstItem="s7Q-kO-6aG" firstAttribute="top" secondItem="e7d-io-Ugd" secondAttribute="bottom" constant="19" id="Uez-sA-RPb"/>
-                            <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="V6O-oa-nqd"/>
                             <constraint firstItem="s7Q-kO-6aG" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="dNR-iT-icn"/>
-                            <constraint firstItem="0of-kg-PG7" firstAttribute="trailing" secondItem="e7d-io-Ugd" secondAttribute="trailing" constant="327" id="fzH-pW-wCz"/>
-                            <constraint firstItem="e7d-io-Ugd" firstAttribute="leading" secondItem="0of-kg-PG7" secondAttribute="leading" constant="327" id="gsx-lq-Gvp"/>
-                            <constraint firstItem="e7d-io-Ugd" firstAttribute="top" secondItem="WDt-vb-uQk" secondAttribute="bottom" constant="35" id="lSv-MR-WRR"/>
-                            <constraint firstItem="3gX-rP-bKt" firstAttribute="top" secondItem="nLj-kc-90W" secondAttribute="bottom" constant="19" id="oD2-Yq-neL"/>
                             <constraint firstItem="nLj-kc-90W" firstAttribute="top" secondItem="s7Q-kO-6aG" secondAttribute="bottom" constant="19" id="t0k-ML-qKL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0of-kg-PG7"/>
                     </view>
                     <connections>
-                        <outlet property="inputAthlete" destination="nLj-kc-90W" id="ZEz-wP-AzY"/>
-                        <outlet property="inputInjuryDesc" destination="3gX-rP-bKt" id="Phw-r5-45F"/>
-                        <outlet property="inputSchool" destination="e7d-io-Ugd" id="rek-7U-4Tu"/>
+                        <outlet property="injuryDescInput" destination="TUO-di-EQy" id="YnD-px-top"/>
                         <outlet property="inputTeam" destination="s7Q-kO-6aG" id="Y7U-gz-cs0"/>
+                        <outlet property="nameInput" destination="nLj-kc-90W" id="2jG-8N-tCN"/>
+                        <outlet property="numberInput" destination="ZtS-ao-0yw" id="bMh-r2-kx0"/>
+                        <outlet property="positionInput" destination="QaJ-Km-Zej" id="yi3-vj-a4t"/>
+                        <outlet property="teamInput" destination="s7Q-kO-6aG" id="kE9-8N-R7O"/>
                         <outletCollection property="padTypes" destination="miw-hE-KMU" collectionClass="NSMutableArray" id="1g1-se-rNz"/>
                         <outletCollection property="padTypes" destination="Mwq-oD-QZv" collectionClass="NSMutableArray" id="oTS-zk-BWG"/>
                         <outletCollection property="padTypes" destination="92G-i5-d3e" collectionClass="NSMutableArray" id="x8c-wb-AGF"/>
