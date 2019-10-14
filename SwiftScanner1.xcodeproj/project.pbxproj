@@ -10,19 +10,6 @@
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
-		037EE8E12331036A00B36C15 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8E02331036A00B36C15 /* ViewController.mm */; };
-		037EE8EB233105A300B36C15 /* CustomShaders.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8E3233105A200B36C15 /* CustomShaders.mm */; };
-		037EE8EC233105A300B36C15 /* CustomUIKitStyles.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8E5233105A200B36C15 /* CustomUIKitStyles.mm */; };
-		037EE8ED233105A300B36C15 /* CalibrationOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8E8233105A200B36C15 /* CalibrationOverlay.mm */; };
-		037EE8EE233105A300B36C15 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8E9233105A200B36C15 /* EAGLView.mm */; };
-		037EE8F1233105B800B36C15 /* MeshRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8EF233105B800B36C15 /* MeshRenderer.mm */; };
-		037EE8F4233105C300B36C15 /* MeshViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8F2233105C300B36C15 /* MeshViewController.mm */; };
-		037EE8F7233105CF00B36C15 /* SettingsPopupView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8F6233105CF00B36C15 /* SettingsPopupView.mm */; };
-		037EE902233105DB00B36C15 /* ViewController+OpenGL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8F8233105DA00B36C15 /* ViewController+OpenGL.mm */; };
-		037EE903233105DB00B36C15 /* ViewController+SLAM.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8FA233105DB00B36C15 /* ViewController+SLAM.mm */; };
-		037EE904233105DB00B36C15 /* ViewController+CaptureSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8FB233105DB00B36C15 /* ViewController+CaptureSession.mm */; };
-		037EE905233105DB00B36C15 /* ViewUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE8FF233105DB00B36C15 /* ViewUtilities.mm */; };
-		037EE906233105DB00B36C15 /* ViewpointController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 037EE900233105DB00B36C15 /* ViewpointController.mm */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
 		038B98C223234E06007E3558 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C123234E06007E3558 /* FirstViewController.swift */; };
 		038B98C423234E06007E3558 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98C323234E06007E3558 /* SecondViewController.swift */; };
@@ -86,32 +73,6 @@
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		037EE8DF2331036A00B36C15 /* SwiftScanner1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftScanner1-Bridging-Header.h"; sourceTree = "<group>"; };
-		037EE8E02331036A00B36C15 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		037EE8E2233103DA00B36C15 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		037EE8E3233105A200B36C15 /* CustomShaders.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomShaders.mm; sourceTree = "<group>"; };
-		037EE8E4233105A200B36C15 /* CustomUIKitStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIKitStyles.h; sourceTree = "<group>"; };
-		037EE8E5233105A200B36C15 /* CustomUIKitStyles.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomUIKitStyles.mm; sourceTree = "<group>"; };
-		037EE8E6233105A200B36C15 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
-		037EE8E7233105A200B36C15 /* CustomShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomShaders.h; sourceTree = "<group>"; };
-		037EE8E8233105A200B36C15 /* CalibrationOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalibrationOverlay.mm; sourceTree = "<group>"; };
-		037EE8E9233105A200B36C15 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
-		037EE8EA233105A200B36C15 /* CalibrationOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationOverlay.h; sourceTree = "<group>"; };
-		037EE8EF233105B800B36C15 /* MeshRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeshRenderer.mm; sourceTree = "<group>"; };
-		037EE8F0233105B800B36C15 /* MeshRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshRenderer.h; sourceTree = "<group>"; };
-		037EE8F2233105C300B36C15 /* MeshViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeshViewController.mm; sourceTree = "<group>"; };
-		037EE8F3233105C300B36C15 /* MeshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshViewController.h; sourceTree = "<group>"; };
-		037EE8F5233105CF00B36C15 /* SettingsPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPopupView.h; sourceTree = "<group>"; };
-		037EE8F6233105CF00B36C15 /* SettingsPopupView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SettingsPopupView.mm; sourceTree = "<group>"; };
-		037EE8F8233105DA00B36C15 /* ViewController+OpenGL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ViewController+OpenGL.mm"; sourceTree = "<group>"; };
-		037EE8F9233105DB00B36C15 /* ViewController+SLAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+SLAM.h"; sourceTree = "<group>"; };
-		037EE8FA233105DB00B36C15 /* ViewController+SLAM.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ViewController+SLAM.mm"; sourceTree = "<group>"; };
-		037EE8FB233105DB00B36C15 /* ViewController+CaptureSession.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "ViewController+CaptureSession.mm"; sourceTree = "<group>"; };
-		037EE8FC233105DB00B36C15 /* ViewController+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+OpenGL.h"; sourceTree = "<group>"; };
-		037EE8FD233105DB00B36C15 /* ViewpointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewpointController.h; sourceTree = "<group>"; };
-		037EE8FE233105DB00B36C15 /* ViewUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtilities.h; sourceTree = "<group>"; };
-		037EE8FF233105DB00B36C15 /* ViewUtilities.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewUtilities.mm; sourceTree = "<group>"; };
-		037EE900233105DB00B36C15 /* ViewpointController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewpointController.mm; sourceTree = "<group>"; };
-		037EE901233105DB00B36C15 /* ViewController+CaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+CaptureSession.h"; sourceTree = "<group>"; };
 		038B98BC23234E06007E3558 /* SwiftScanner1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftScanner1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038B98BF23234E06007E3558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038B98C123234E06007E3558 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -206,39 +167,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		037EE9082331061800B36C15 /* SDK Scanner */ = {
-			isa = PBXGroup;
-			children = (
-				037EE8FD233105DB00B36C15 /* ViewpointController.h */,
-				037EE8F2233105C300B36C15 /* MeshViewController.mm */,
-				037EE8E7233105A200B36C15 /* CustomShaders.h */,
-				037EE901233105DB00B36C15 /* ViewController+CaptureSession.h */,
-				037EE8FB233105DB00B36C15 /* ViewController+CaptureSession.mm */,
-				037EE8FC233105DB00B36C15 /* ViewController+OpenGL.h */,
-				037EE8F8233105DA00B36C15 /* ViewController+OpenGL.mm */,
-				037EE8F9233105DB00B36C15 /* ViewController+SLAM.h */,
-				037EE8FA233105DB00B36C15 /* ViewController+SLAM.mm */,
-				037EE900233105DB00B36C15 /* ViewpointController.mm */,
-				037EE8FE233105DB00B36C15 /* ViewUtilities.h */,
-				037EE8FF233105DB00B36C15 /* ViewUtilities.mm */,
-				037EE8F5233105CF00B36C15 /* SettingsPopupView.h */,
-				037EE8F6233105CF00B36C15 /* SettingsPopupView.mm */,
-				037EE8F3233105C300B36C15 /* MeshViewController.h */,
-				037EE8F0233105B800B36C15 /* MeshRenderer.h */,
-				037EE8EF233105B800B36C15 /* MeshRenderer.mm */,
-				037EE8E2233103DA00B36C15 /* ViewController.h */,
-				037EE8EA233105A200B36C15 /* CalibrationOverlay.h */,
-				037EE8E8233105A200B36C15 /* CalibrationOverlay.mm */,
-				037EE8E3233105A200B36C15 /* CustomShaders.mm */,
-				037EE8E4233105A200B36C15 /* CustomUIKitStyles.h */,
-				037EE8E5233105A200B36C15 /* CustomUIKitStyles.mm */,
-				037EE8E6233105A200B36C15 /* EAGLView.h */,
-				037EE8E9233105A200B36C15 /* EAGLView.mm */,
-				037EE8E02331036A00B36C15 /* ViewController.mm */,
-			);
-			path = "SDK Scanner";
-			sourceTree = "<group>";
-		};
 		038B98B323234E06007E3558 = {
 			isa = PBXGroup;
 			children = (
@@ -263,16 +191,16 @@
 		038B98BE23234E06007E3558 /* SwiftScanner1 */ = {
 			isa = PBXGroup;
 			children = (
-				037EE9082331061800B36C15 /* SDK Scanner */,
 				653F3B962351230300D0B4AA /* GlobalVariables.swift */,
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
+				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
 				653829FD232C4730002AA380 /* UserInputViewController.swift */,
 				6551607023541B9F00D8AF0D /* ScanExistingViewController.swift */,
 				653F3B94234B67DE00D0B4AA /* PadObject.swift */,
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
-				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
+				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */,
@@ -280,7 +208,6 @@
 				653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */,
 				653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */,
 				653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */,
-				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
 				6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */,
 				6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */,
 				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
@@ -474,37 +401,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				653F3B8D234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift in Sources */,
-				037EE8E12331036A00B36C15 /* ViewController.mm in Sources */,
 				653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */,
-				037EE8F7233105CF00B36C15 /* SettingsPopupView.mm in Sources */,
-				037EE904233105DB00B36C15 /* ViewController+CaptureSession.mm in Sources */,
 				653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */,
 				6551607323541D8B00D8AF0D /* RegisterPlayerViewController.swift in Sources */,
 				6551607123541B9F00D8AF0D /* ScanExistingViewController.swift in Sources */,
-				037EE903233105DB00B36C15 /* ViewController+SLAM.mm in Sources */,
 				653F3B91234B62AC00D0B4AA /* PadDatabaseViewController.swift in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
-				037EE8EE233105A300B36C15 /* EAGLView.mm in Sources */,
-				037EE8F1233105B800B36C15 /* MeshRenderer.mm in Sources */,
 				653F3B8F234B5D3D00D0B4AA /* OrdersViewController.swift in Sources */,
 				653F3B93234B668900D0B4AA /* ScanOrderTableViewCell.swift in Sources */,
-				037EE8ED233105A300B36C15 /* CalibrationOverlay.mm in Sources */,
-				037EE8EC233105A300B36C15 /* CustomUIKitStyles.mm in Sources */,
 				653F3B8B234B522B00D0B4AA /* AdditionalScanInfoViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
-				037EE906233105DB00B36C15 /* ViewpointController.mm in Sources */,
 				0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */,
-				037EE8F4233105C300B36C15 /* MeshViewController.mm in Sources */,
 				653F3B89234ADDAC00D0B4AA /* ConfirmScanViewController.swift in Sources */,
-				037EE8EB233105A300B36C15 /* CustomShaders.mm in Sources */,
 				038B98C223234E06007E3558 /* FirstViewController.swift in Sources */,
 				653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */,
 				653F3B972351230300D0B4AA /* GlobalVariables.swift in Sources */,
 				65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */,
 				6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */,
-				037EE905233105DB00B36C15 /* ViewUtilities.mm in Sources */,
 				6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */,
-				037EE902233105DB00B36C15 /* ViewController+OpenGL.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

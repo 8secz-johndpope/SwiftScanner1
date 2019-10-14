@@ -617,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORF-tX-VvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159.9609375" y="1545.3125"/>
+            <point key="canvasLocation" x="295" y="1454"/>
         </scene>
         <!--Orders-->
         <scene sceneID="CeX-ul-3mh">
@@ -838,7 +838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jt7-cd-oHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="2285"/>
+            <point key="canvasLocation" x="523" y="2552"/>
         </scene>
         <!--Register Player-->
         <scene sceneID="RvB-Bp-td2">
@@ -931,6 +931,6 @@
         <segue reference="Vvw-Kj-D07"/>
         <segue reference="GJN-H4-zzz"/>
         <segue reference="e1f-iF-0DQ"/>
-        <segue reference="xbX-VV-DtE"/>
+        <segue reference="nvw-kL-e3s"/>
     </inferredMetricsTieBreakers>
 </document>

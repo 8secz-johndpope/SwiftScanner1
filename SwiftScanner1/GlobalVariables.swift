@@ -8,10 +8,14 @@
 
 import Foundation
 
+// array of all_pads
+// when user inputs info it will create a Pad object and append it to this array
+// thus, currentPad = all_pads[-1]
+var all_pads: [Pad] = []
+
+var status_options: [String] = ["Recieved", "Modeled", "Printing", "Shipping", "Delivered"]
+
+
 class GlobalVariables {
-    // array of all_pads
-    // when user inputs info it will create a Pad object and append it to this array
-    // thus, currentPad = all_pads[-1]
-    var all_pads: [Pad] = []
 
     }

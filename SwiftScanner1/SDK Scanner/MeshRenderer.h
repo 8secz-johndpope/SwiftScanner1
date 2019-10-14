@@ -7,6 +7,7 @@
 #pragma once
 
 #import <GLKit/GLKit.h>
+#import <UIKit/UIKit.h>
 #import <CoreVideo/CVImageBuffer.h>
 
 @class STMesh;

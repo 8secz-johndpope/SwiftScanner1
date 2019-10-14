@@ -5,6 +5,7 @@
 */
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #define HAS_LIBCXX
 

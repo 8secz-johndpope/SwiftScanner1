@@ -17,11 +17,11 @@ class ScanHomePageViewController: UIViewController {
     }
     
     @IBAction func scanNewButton(_ sender: Any) {
-        performSegue(withIdentifier: scanNewToInfo, sender: self)
+        performSegue(withIdentifier: "scanNewToInfo", sender: self)
     }
     
     @IBAction func scanExistingButton(_ sender: Any) {
-         performSegue(withIdentifier: scanExistingToInfo, sender: self)
+         performSegue(withIdentifier: "scanExistingToInfo", sender: self)
     }
     /*
     // MARK: - Navigation

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScanExistingViewController: ViewController {
+class ScanExistingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

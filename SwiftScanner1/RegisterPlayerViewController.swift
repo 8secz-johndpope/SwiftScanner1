@@ -9,7 +9,7 @@
 
 import UIKit
 
-class RegisterPlayerViewController: ViewController {
+class RegisterPlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
