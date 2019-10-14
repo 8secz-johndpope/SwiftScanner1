@@ -1,14 +1,14 @@
 //
-//  ScanHomePageViewController.swift
+//  ScanExistingViewController.swift
 //  SwiftScanner1
 //
-//  Created by Jackson Hubbard on 9/23/19.
+//  Created by Jackson Hubbard on 10/13/19.
 //  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
 
 import UIKit
 
-class ScanHomePageViewController: UIViewController {
+class ScanExistingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,13 +16,11 @@ class ScanHomePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func scanNewButton(_ sender: Any) {
-        performSegue(withIdentifier: scanNewToInfo, sender: self)
+    @IBAction func beginScanButton(_ sender: Any) {
+        performSegue(withIdentifier: "beginScanToInstruct", sender: self)
+        
     }
     
-    @IBAction func scanExistingButton(_ sender: Any) {
-         performSegue(withIdentifier: scanExistingToInfo, sender: self)
-    }
     /*
     // MARK: - Navigation
 

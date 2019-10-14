@@ -139,7 +139,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="DP7-cZ-nvR" eventType="touchUpInside" id="G8q-tM-i2f"/>
-                                    <segue destination="ybI-PX-Vf8" kind="show" identifier="loginToHome" id="Vvw-Kj-D07"/>
+                                    <segue destination="u6Y-QB-ySF" kind="show" identifier="loginToHome" id="Vvw-Kj-D07"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cx0-mO-W7b">
@@ -150,7 +150,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QaU-G7-Uqo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5Wq-vC-o7U"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="jb3-Qm-g4I"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFm-kj-5cU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5u-xI-Afc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483.39843749999994" y="1734.375"/>
+            <point key="canvasLocation" x="937" y="1455"/>
         </scene>
         <!--Confirm Scan View Controller-->
         <scene sceneID="J3O-kv-8RF">
@@ -352,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3p-5M-fat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="157"/>
+            <point key="canvasLocation" x="1826" y="177"/>
         </scene>
         <!--Additional Scan Info View Controller-->
         <scene sceneID="nxP-qS-8qw">
@@ -449,7 +450,7 @@
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="homeButton:" destination="Ctw-O4-0MP" eventType="touchUpInside" id="hxa-1P-UeB"/>
-                                    <segue destination="ybI-PX-Vf8" kind="show" identifier="PadSubmittedtoHomeSegue" id="e7s-kD-h5Y"/>
+                                    <segue destination="u6Y-QB-ySF" kind="show" identifier="PadSubmittedtoHomeSegue" id="e7s-kD-h5Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -520,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxZ-bJ-GwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="1964"/>
+            <point key="canvasLocation" x="3308" y="3577"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="ZlG-Dv-Ef6">
@@ -558,9 +559,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCI-Zm-rm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412.6953125" y="2075"/>
+            <point key="canvasLocation" x="1826" y="1613"/>
         </scene>
-        <!--Scan Home Page View Controller-->
+        <!--Scan-->
         <scene sceneID="dqB-tf-Ipl">
             <objects>
                 <viewController id="ybI-PX-Vf8" customClass="ScanHomePageViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
@@ -605,18 +606,20 @@
                                 </state>
                                 <connections>
                                     <action selector="scanExistingButton:" destination="ybI-PX-Vf8" eventType="touchUpInside" id="lzU-c8-vk8"/>
+                                    <segue destination="T1E-8G-wtB" kind="show" identifier="scanExistingToInfo" id="6Yi-xX-7p3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0FO-h3-euT"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Scan" id="yTc-Ej-xb8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORF-tX-VvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564.2578125" y="1545.3125"/>
+            <point key="canvasLocation" x="159.9609375" y="1545.3125"/>
         </scene>
-        <!--Order Status View Controller-->
+        <!--Orders-->
         <scene sceneID="CeX-ul-3mh">
             <objects>
                 <viewController id="6E4-sW-POF" customClass="OrderStatusViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
@@ -668,15 +671,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Cp-hh-Puj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Orders" id="usA-Hy-WvV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="OJ5-Hz-SWC" id="iIa-ov-IuF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPf-ba-7s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335" y="3097"/>
+            <point key="canvasLocation" x="230" y="4049"/>
         </scene>
-        <!--Pad Database View Controller-->
+        <!--Pad Database-->
         <scene sceneID="LWK-ut-ao0">
             <objects>
                 <viewController id="XWi-vW-qu6" customClass="PadDatabaseViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
@@ -700,10 +705,219 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R7e-4X-xwa"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pad Database" id="LXf-Ig-kxZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fn4-72-meD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="3170"/>
+            <point key="canvasLocation" x="-575" y="4049"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="A6D-fn-hiK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u6Y-QB-ySF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0CG-Ql-dAW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6E4-sW-POF" kind="relationship" relationship="viewControllers" id="GJN-H4-zzz"/>
+                        <segue destination="XWi-vW-qu6" kind="relationship" relationship="viewControllers" id="D5T-ow-c3p"/>
+                        <segue destination="ybI-PX-Vf8" kind="relationship" relationship="viewControllers" id="AR1-so-ws8"/>
+                        <segue destination="ON3-1Z-LFj" kind="relationship" relationship="viewControllers" id="t0J-ZO-yZX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQJ-eV-Yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="1647"/>
+        </scene>
+        <!--Scan Existing View Controller-->
+        <scene sceneID="3qS-xa-WFU">
+            <objects>
+                <viewController id="T1E-8G-wtB" customClass="ScanExistingViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v22-Mp-0MG">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-jm-zcO">
+                                <rect key="frame" x="20" y="67" width="984" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hh3-bi-6Ic">
+                                <rect key="frame" x="327" y="133" width="370" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pn7-vz-GeA">
+                                <rect key="frame" x="327" y="174" width="370" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P32-mu-Bjw">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Select Pad Type"/>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="T1E-8G-wtB" eventType="touchUpInside" id="3dK-7H-pRA"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZB-gC-ySd">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="0.0"/>
+                                        <state key="normal" title="AC Joint"/>
+                                        <connections>
+                                            <action selector="citySelected:" destination="T1E-8G-wtB" eventType="touchUpInside" id="OMc-2k-flL"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJu-xL-M6f">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="0.0"/>
+                                        <state key="normal" title="Ankle"/>
+                                        <connections>
+                                            <action selector="citySelected:" destination="T1E-8G-wtB" eventType="touchUpInside" id="erL-zh-2Sz"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-Fs-Xal">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="0.0"/>
+                                        <state key="normal" title="Collarbone"/>
+                                        <connections>
+                                            <action selector="citySelected:" destination="T1E-8G-wtB" eventType="touchUpInside" id="Vtn-co-xqE"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exp-2Q-p9T">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="0.0"/>
+                                        <state key="normal" title="Forearm"/>
+                                        <connections>
+                                            <action selector="citySelected:" destination="T1E-8G-wtB" eventType="touchUpInside" id="md1-ya-mCy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Injury description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2G4-gl-pac">
+                                <rect key="frame" x="327" y="223" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsz-Uc-TS3">
+                                <rect key="frame" x="454" y="291" width="117" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3434472818" green="0.68244866039999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Begin Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginScan:" destination="T1E-8G-wtB" eventType="touchUpInside" id="12O-aa-lky"/>
+                                    <action selector="beginScanButton:" destination="T1E-8G-wtB" eventType="touchUpInside" id="N0J-oE-e3M"/>
+                                    <segue destination="am2-H2-AUV" kind="show" identifier="beginScanToInstruct" id="e1f-iF-0DQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MfQ-jm-zcO" firstAttribute="top" secondItem="rZh-ld-6hR" secondAttribute="top" constant="47" id="3T1-X2-S8B"/>
+                            <constraint firstItem="Pn7-vz-GeA" firstAttribute="leading" secondItem="rZh-ld-6hR" secondAttribute="leading" constant="327" id="TZO-wi-nAG"/>
+                            <constraint firstItem="rZh-ld-6hR" firstAttribute="trailing" secondItem="Pn7-vz-GeA" secondAttribute="trailing" constant="327" id="Z2Y-QY-TK8"/>
+                            <constraint firstItem="rZh-ld-6hR" firstAttribute="trailing" secondItem="Hh3-bi-6Ic" secondAttribute="trailing" constant="327" id="o10-vu-vjD"/>
+                            <constraint firstItem="Pn7-vz-GeA" firstAttribute="leading" secondItem="rZh-ld-6hR" secondAttribute="leading" constant="327" id="s4F-jm-prT"/>
+                            <constraint firstItem="Hh3-bi-6Ic" firstAttribute="leading" secondItem="rZh-ld-6hR" secondAttribute="leading" constant="327" id="tyb-K6-YHs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rZh-ld-6hR"/>
+                    </view>
+                    <connections>
+                        <outlet property="injuryDescInput" destination="2G4-gl-pac" id="dFB-iK-5CY"/>
+                        <outlet property="nameInput" destination="Hh3-bi-6Ic" id="BSb-wC-3vW"/>
+                        <outletCollection property="padTypes" destination="AZB-gC-ySd" collectionClass="NSMutableArray" id="u72-Ng-yi5"/>
+                        <outletCollection property="padTypes" destination="WJu-xL-M6f" collectionClass="NSMutableArray" id="w8I-Ln-pJP"/>
+                        <outletCollection property="padTypes" destination="Xo1-Fs-Xal" collectionClass="NSMutableArray" id="vqw-wA-wPH"/>
+                        <outletCollection property="padTypes" destination="exp-2Q-p9T" collectionClass="NSMutableArray" id="H1s-tq-cpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jt7-cd-oHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="2285"/>
+        </scene>
+        <!--Register Player-->
+        <scene sceneID="RvB-Bp-td2">
+            <objects>
+                <viewController id="ON3-1Z-LFj" customClass="RegisterPlayerViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rhh-NS-wc0">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the following informtion into the text fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTc-Ff-BBR">
+                                <rect key="frame" x="20" y="67" width="984" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Athlete's name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtx-Gd-A4Q">
+                                <rect key="frame" x="327" y="117" width="370" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwy-8l-Nh6">
+                                <rect key="frame" x="327" y="173" width="370" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Position" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7d-Dj-izL">
+                                <rect key="frame" x="327" y="232" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qS-6j-4fj">
+                                <rect key="frame" x="327" y="294" width="370" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEp-lz-Z7e">
+                                <rect key="frame" x="435" y="583" width="155" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3434472818" green="0.68244866039999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Register Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginScan:" destination="ON3-1Z-LFj" eventType="touchUpInside" id="ljt-Hh-W0d"/>
+                                    <action selector="beginScanButton:" destination="ON3-1Z-LFj" eventType="touchUpInside" id="7FQ-Df-3ib"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jtx-Gd-A4Q" firstAttribute="top" secondItem="Qwy-8l-Nh6" secondAttribute="bottom" constant="19" id="DmO-pt-VSH"/>
+                            <constraint firstItem="g2d-ud-JGZ" firstAttribute="trailing" secondItem="jtx-Gd-A4Q" secondAttribute="trailing" constant="327" id="Izi-Oy-koJ"/>
+                            <constraint firstItem="g2d-ud-JGZ" firstAttribute="trailing" secondItem="Qwy-8l-Nh6" secondAttribute="trailing" constant="327" id="Jlj-ah-8Sp"/>
+                            <constraint firstItem="iTc-Ff-BBR" firstAttribute="top" secondItem="g2d-ud-JGZ" secondAttribute="top" constant="47" id="NeG-yN-5xM"/>
+                            <constraint firstItem="Qwy-8l-Nh6" firstAttribute="leading" secondItem="g2d-ud-JGZ" secondAttribute="leading" constant="327" id="pjO-Si-ugR"/>
+                            <constraint firstItem="jtx-Gd-A4Q" firstAttribute="top" secondItem="Qwy-8l-Nh6" secondAttribute="bottom" constant="19" id="qvU-Jp-RYa"/>
+                            <constraint firstItem="jtx-Gd-A4Q" firstAttribute="leading" secondItem="g2d-ud-JGZ" secondAttribute="leading" constant="327" id="thE-wa-Wmm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g2d-ud-JGZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Register Player" id="jYg-pN-BLz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="inputTeam" destination="Qwy-8l-Nh6" id="lFc-CZ-iX8"/>
+                        <outlet property="nameInput" destination="jtx-Gd-A4Q" id="P8I-LV-XQd"/>
+                        <outlet property="numberInput" destination="2qS-6j-4fj" id="kNl-eO-sdS"/>
+                        <outlet property="positionInput" destination="R7d-Dj-izL" id="fth-9v-3bi"/>
+                        <outlet property="teamInput" destination="Qwy-8l-Nh6" id="04p-gt-Uq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50C-YV-2ms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1358" y="4049"/>
         </scene>
     </scenes>
     <resources>
@@ -713,7 +927,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e7s-kD-h5Y"/>
-        <segue reference="lzU-1b-eKA"/>
+        <segue reference="Vvw-Kj-D07"/>
+        <segue reference="GJN-H4-zzz"/>
+        <segue reference="e1f-iF-0DQ"/>
+        <segue reference="xbX-VV-DtE"/>
     </inferredMetricsTieBreakers>
 </document>
