@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
+		033672C42355414800B12738 /* SDK Scanner in Resources */ = {isa = PBXBuildFile; fileRef = 033672C32355414800B12738 /* SDK Scanner */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		033672C32355414800B12738 /* SDK Scanner */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SDK Scanner"; path = "../../../Downloads/Structure SDK-3/Samples/SDK Scanner"; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -191,6 +193,7 @@
 		038B98BE23234E06007E3558 /* SwiftScanner1 */ = {
 			isa = PBXGroup;
 			children = (
+				033672C32355414800B12738 /* SDK Scanner */,
 				653F3B962351230300D0B4AA /* GlobalVariables.swift */,
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
@@ -376,6 +379,7 @@
 				038B98CC23234E07007E3558 /* LaunchScreen.storyboard in Resources */,
 				038B98C923234E07007E3558 /* Assets.xcassets in Resources */,
 				038B98C723234E06007E3558 /* Main.storyboard in Resources */,
+				033672C42355414800B12738 /* SDK Scanner in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

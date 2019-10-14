@@ -426,7 +426,7 @@
                                     <fragment>
                                         <string key="content">Congratulations your pad has been submitted. Your pad should arrive within the next 3 business days. Keep track of its progress in the Orders tab. </string>
                                         <attributes>
-                                            <font key="NSFont" size="20" name=".SFNSText"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -931,6 +931,6 @@
         <segue reference="Vvw-Kj-D07"/>
         <segue reference="GJN-H4-zzz"/>
         <segue reference="e1f-iF-0DQ"/>
-        <segue reference="nvw-kL-e3s"/>
+        <segue reference="lzU-1b-eKA"/>
     </inferredMetricsTieBreakers>
 </document>
