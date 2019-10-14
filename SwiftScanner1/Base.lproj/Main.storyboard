@@ -718,6 +718,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u6Y-QB-ySF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0CG-Ql-dAW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -730,7 +731,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQJ-eV-Yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="1647"/>
+            <point key="canvasLocation" x="-776" y="1613"/>
         </scene>
         <!--Scan Existing View Controller-->
         <scene sceneID="3qS-xa-WFU">

@@ -7,6 +7,7 @@
 #pragma once
 
 #include <GLKit/GLKit.h>
+#import <UIKit/UIKit.h>
 
 // Helper functions.
 GLuint loadOpenGLProgramFromString (const char *vertex_shader_src,
