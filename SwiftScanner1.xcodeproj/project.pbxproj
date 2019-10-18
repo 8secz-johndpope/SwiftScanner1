@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
-		033672C42355414800B12738 /* SDK Scanner in Resources */ = {isa = PBXBuildFile; fileRef = 033672C32355414800B12738 /* SDK Scanner */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
@@ -49,6 +48,11 @@
 		6551607323541D8B00D8AF0D /* RegisterPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */; };
 		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
 		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
+		65C5272D2359415600CCDB4D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527282359415600CCDB4D /* libz.1.2.5.tbd */; };
+		65C5272E2359415600CCDB4D /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527292359415600CCDB4D /* libz.1.2.8.tbd */; };
+		65C5272F2359415600CCDB4D /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5272A2359415600CCDB4D /* libz.1.tbd */; };
+		65C527302359415600CCDB4D /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5272B2359415600CCDB4D /* libz.1.1.3.tbd */; };
+		65C527312359415600CCDB4D /* libz.1.2.11.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5272C2359415600CCDB4D /* libz.1.2.11.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +74,6 @@
 
 /* Begin PBXFileReference section */
 		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
-		033672C32355414800B12738 /* SDK Scanner */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SDK Scanner"; path = "../../../Downloads/Structure SDK-3/Samples/SDK Scanner"; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -119,6 +122,13 @@
 		6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPlayerViewController.swift; sourceTree = "<group>"; };
 		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
 		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
+		65C527282359415600CCDB4D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		65C527292359415600CCDB4D /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		65C5272A2359415600CCDB4D /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		65C5272B2359415600CCDB4D /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		65C5272C2359415600CCDB4D /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
+		65C52736235A493500CCDB4D /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
+		65C52737235A6AF200CCDB4D /* SwiftScanner1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftScanner1-Bridging-Header.h"; sourceTree = "<group>"; };
 		65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
 		65EFBDED232F3AD40032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kevin and DJ.jpg"; path = "../../kevin and DJ.jpg"; sourceTree = "<group>"; };
@@ -132,7 +142,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C5272D2359415600CCDB4D /* libz.1.2.5.tbd in Frameworks */,
+				65C5272E2359415600CCDB4D /* libz.1.2.8.tbd in Frameworks */,
+				65C5272F2359415600CCDB4D /* libz.1.tbd in Frameworks */,
+				65C527302359415600CCDB4D /* libz.1.1.3.tbd in Frameworks */,
+				65C527312359415600CCDB4D /* libz.1.2.11.tbd in Frameworks */,
 				0367DB5E2328930900FA872C /* libz.tbd in Frameworks */,
+				038B990523235B20007E3558 /* ImageIO.framework in Frameworks */,
+				038B990123235B10007E3558 /* ExternalAccessory.framework in Frameworks */,
 				03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */,
 				038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */,
 				038B990F23235B53007E3558 /* UIKit.framework in Frameworks */,
@@ -140,9 +157,7 @@
 				038B990B23235B41007E3558 /* OpenGLES.framework in Frameworks */,
 				038B990923235B37007E3558 /* MetalPerformanceShaders.framework in Frameworks */,
 				038B990723235B2E007E3558 /* Metal.framework in Frameworks */,
-				038B990523235B20007E3558 /* ImageIO.framework in Frameworks */,
 				038B990323235B19007E3558 /* Foundation.framework in Frameworks */,
-				038B990123235B10007E3558 /* ExternalAccessory.framework in Frameworks */,
 				038B98FF23235B08007E3558 /* CoreVideo.framework in Frameworks */,
 				038B98FD23235B00007E3558 /* CoreMedia.framework in Frameworks */,
 				038B98FB23235AF7007E3558 /* CoreGraphics.framework in Frameworks */,
@@ -193,7 +208,7 @@
 		038B98BE23234E06007E3558 /* SwiftScanner1 */ = {
 			isa = PBXGroup;
 			children = (
-				033672C32355414800B12738 /* SDK Scanner */,
+				65C52736235A493500CCDB4D /* Structure.framework */,
 				653F3B962351230300D0B4AA /* GlobalVariables.swift */,
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
@@ -219,6 +234,7 @@
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
 				037EE8DF2331036A00B36C15 /* SwiftScanner1-Bridging-Header.h */,
+				65C52737235A6AF200CCDB4D /* SwiftScanner1-Bridging-Header.h */,
 			);
 			path = SwiftScanner1;
 			sourceTree = "<group>";
@@ -244,6 +260,11 @@
 		038B98F323235AE2007E3558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65C5272B2359415600CCDB4D /* libz.1.1.3.tbd */,
+				65C527282359415600CCDB4D /* libz.1.2.5.tbd */,
+				65C527292359415600CCDB4D /* libz.1.2.8.tbd */,
+				65C5272C2359415600CCDB4D /* libz.1.2.11.tbd */,
+				65C5272A2359415600CCDB4D /* libz.1.tbd */,
 				65EFBDF1232F3B490032F578 /* kevin and DJ.png */,
 				65EFBDF3232F3B580032F578 /* kevin and DJ.png */,
 				65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */,
@@ -339,7 +360,7 @@
 				TargetAttributes = {
 					038B98BB23234E06007E3558 = {
 						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 					};
 					038B98D123234E07007E3558 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -379,7 +400,6 @@
 				038B98CC23234E07007E3558 /* LaunchScreen.storyboard in Resources */,
 				038B98C923234E07007E3558 /* Assets.xcassets in Resources */,
 				038B98C723234E06007E3558 /* Main.storyboard in Resources */,
-				033672C42355414800B12738 /* SDK Scanner in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,20 +619,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Structure.framework/Headers";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Structure.framework/Headers";
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -627,20 +649,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Structure.framework/Headers";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Structure.framework/Headers";
 				INFOPLIST_FILE = SwiftScanner1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

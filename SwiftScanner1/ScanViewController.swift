@@ -6,10 +6,10 @@
 //  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
 
-import UIKit
+//import UIKit
 
 //class ScanViewController: UIViewController, STSensorControllerDelegate {
-class ScanViewController: UIViewController {
+//class ScanViewController: UIViewController {
 
 //
 ////    @IBAction func startScanButton(_ sender: Any) {
@@ -138,4 +138,4 @@ class ScanViewController: UIViewController {
 //
 //    }
 
-}
+//}

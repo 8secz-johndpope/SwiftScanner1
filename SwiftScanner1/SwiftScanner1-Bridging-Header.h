@@ -15,3 +15,10 @@
 //#import "CalibrationOverlay.h"
 //#import "CustomUIKitStyles.h"
 //#import "EAGLView.h"
+
+#define HAS_LIBCXX
+#import "STCaptureSession.h"
+#import "STCaptureSession+Types.h"
+#import "STOccFileWriter.h"
+#import "Structure.h"
+#import "StructureSLAM.h"
