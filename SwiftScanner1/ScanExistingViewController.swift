@@ -10,15 +10,19 @@ import UIKit
 
 class ScanExistingViewController: UIViewController {
 
+    @IBOutlet weak var nameInput: UITextField!
+    
+    @IBOutlet weak var injuryDescInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+   
     @IBAction func beginScanButton(_ sender: Any) {
         performSegue(withIdentifier: "beginScanToInstruct", sender: self)
-        
     }
     
     /*
