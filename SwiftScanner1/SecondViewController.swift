@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
 //        sharedController = STSensorController.shared()
 //        super.init(coder: decoder)
 //
-//        sharedController.delegate = self
+//        sharedController.delegate = self as! STSensorControllerDelegate
 //        sharedController.initializeSensorConnection()
 //    }
 //
@@ -106,6 +106,6 @@ class SecondViewController: UIViewController {
 //    func sensorBatteryNeedsCharging() {
 //
 //    }
-//
+
 }
 

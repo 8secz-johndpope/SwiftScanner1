@@ -21,7 +21,7 @@ class OrderStatusViewController: UIViewController {
         super.viewDidLoad()
         
         // set this VC as delegate and data source for tableView
-        tableView.delegate = (self as! UITableViewDelegate)
+        tableView.delegate = self as? UITableViewDelegate
         tableView.dataSource = self as? UITableViewDataSource
         
         // set pads array = array we created in appendPad()

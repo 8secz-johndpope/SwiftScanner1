@@ -16,8 +16,10 @@ class ScanHomePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+   
+    
     @IBAction func scanNewButton(_ sender: Any) {
-        performSegue(withIdentifier: "scanNewToInfo", sender: self)
+        performSegue(withIdentifier: "scanNewtoUserInput", sender: self) 
     }
     
     @IBAction func scanExistingButton(_ sender: Any) {
