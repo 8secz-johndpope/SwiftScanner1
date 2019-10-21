@@ -1,29 +1,36 @@
 //
-//  InstructionsViewController.swift
+//  ScanInstructionsViewController.swift
 //  SwiftScanner1
 //
-//  Created by Jackson Hubbard on 9/15/19.
+//  Created by Jackson Hubbard on 10/20/19.
 //  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
 
 import UIKit
 
-class InstructionsViewController: UIViewController {
+class ScanInstructionsViewController: UIViewController {
 
-    
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let curr_pad = all_pads.last!
+        let name = curr_pad.name
+        let padType = curr_pad.padType
+        let number = curr_pad.number
+        
+        instructionsMessage.text = "To scan \(name)'s \(padType) \(number) ..."
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func confirmInstructions(_ sender: Any) {
+    @IBOutlet weak var instructionsMessage: UITextField!
+    
+    @IBAction func beginScanButton(_ sender: Any) {
         performSegue(withIdentifier: "instructionsToFirstScanner", sender: self)
     }
     
+    
+    
+
     /*
     // MARK: - Navigation
 

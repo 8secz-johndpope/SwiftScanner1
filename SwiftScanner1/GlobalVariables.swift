@@ -12,6 +12,7 @@ import Foundation
 // when user inputs info it will create a Pad object and append it to this array
 // thus, currentPad = all_pads[-1]
 var all_pads: [Pad] = []
+var all_athletes: [Athlete] = []
 
 var status_options: [String] = ["Recieved", "Modeled", "Printing", "Shipping", "Delivered"]
 

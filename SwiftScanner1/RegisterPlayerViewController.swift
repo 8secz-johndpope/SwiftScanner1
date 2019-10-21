@@ -10,7 +10,28 @@
 import UIKit
 
 class RegisterPlayerViewController: UIViewController {
+    
+    @IBOutlet weak var nameInput: UITextField!
+    @IBOutlet weak var teamInput: UITextField!
+    @IBOutlet weak var positionInput: UITextField!
+    @IBOutlet weak var numberInput: UITextField!
+    
+    
+    @IBAction func registerPlayerButton (_ sender: Any) {
+        let currentAthlete = Athlete(name: nameInput.text!, team: teamInput.text!, number: Int(numberInput.text!)!, position: positionInput.text!)
+        
+        all_athletes.append(currentAthlete)
 
+        let madeObj = true
+        if madeObj {
+        nameInput.text?.removeAll()
+        teamInput.text?.removeAll()
+        positionInput.text?.removeAll()
+        numberInput.text?.removeAll()
+        }
+    }
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
