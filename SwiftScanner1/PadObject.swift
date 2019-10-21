@@ -33,4 +33,15 @@ class Pad {
         self.orderStatus = status_options[0]    // "Received"
         
     }
+    
+    init(name: String, padType: String, injuryDesc: String) {
+        self.name = name
+        self.padType = padType
+        self.injuryDesc = injuryDesc
+        
+        self.team = ""
+        self.number = 0
+        self.position = ""
+        self.orderStatus = status_options[0]    // "Received"
+    }
 }

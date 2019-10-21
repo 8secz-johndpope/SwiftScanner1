@@ -55,6 +55,8 @@
 		653F3B972351230300D0B4AA /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B962351230300D0B4AA /* GlobalVariables.swift */; };
 		6551607123541B9F00D8AF0D /* ScanExistingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551607023541B9F00D8AF0D /* ScanExistingViewController.swift */; };
 		6551607323541D8B00D8AF0D /* RegisterPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */; };
+		655F0B42235D5C5F0019D90E /* ScanInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */; };
+		655F0B44235DC71C0019D90E /* AthleteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0B43235DC71C0019D90E /* AthleteObject.swift */; };
 		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
 		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
 		65C5272D2359415600CCDB4D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527282359415600CCDB4D /* libz.1.2.5.tbd */; };
@@ -138,6 +140,8 @@
 		653F3B962351230300D0B4AA /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		6551607023541B9F00D8AF0D /* ScanExistingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanExistingViewController.swift; sourceTree = "<group>"; };
 		6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPlayerViewController.swift; sourceTree = "<group>"; };
+		655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInstructionsViewController.swift; sourceTree = "<group>"; };
+		655F0B43235DC71C0019D90E /* AthleteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteObject.swift; sourceTree = "<group>"; };
 		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
 		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
 		65C527282359415600CCDB4D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -147,7 +151,6 @@
 		65C5272C2359415600CCDB4D /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
 		65C52736235A493500CCDB4D /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		65C52737235A6AF200CCDB4D /* SwiftScanner1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftScanner1-Bridging-Header.h"; sourceTree = "<group>"; };
-		65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		65EFBDEB232F3AB10032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
 		65EFBDED232F3AD40032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kevin and DJ.jpg"; path = "../../kevin and DJ.jpg"; sourceTree = "<group>"; };
 		65EFBDEF232F3AE30032F578 /* kevin and DJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kevin and DJ.jpg"; sourceTree = "<group>"; };
@@ -240,11 +243,27 @@
 				653829FD232C4730002AA380 /* UserInputViewController.swift */,
 				6551607023541B9F00D8AF0D /* ScanExistingViewController.swift */,
 				653F3B94234B67DE00D0B4AA /* PadObject.swift */,
+				6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */,
+				655F0B43235DC71C0019D90E /* AthleteObject.swift */,
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
-				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
+				038B98C523234E06007E3558 /* Main.storyboard */,
+				655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */,
+				653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */,
+				653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */,
+				653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */,
+				653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */,
+				653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */,
+				6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */,
+				653F3B8E234B5D3D00D0B4AA /* OrdersViewController.swift */,
+				038B98C823234E07007E3558 /* Assets.xcassets */,
+				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
+				038B98CD23234E07007E3558 /* Info.plist */,
+				037EE8DF2331036A00B36C15 /* SwiftScanner1-Bridging-Header.h */,
+				0331336B235AA93700A11559 /* RRScanner */,
+				038B98C123234E06007E3558 /* FirstViewController.swift */,
 				03313372235AA94E00A11559 /* EAGLView.swift */,
 				03313373235AA94E00A11559 /* MeshRenderer.swift */,
 				0331336E235AA94D00A11559 /* MeshViewController.swift */,
@@ -254,21 +273,6 @@
 				03313375235AA94E00A11559 /* ViewController+SLAM.swift */,
 				0331336F235AA94D00A11559 /* ViewpointController.swift */,
 				0331336C235AA94200A11559 /* CustomShaders.swift */,
-				0331336B235AA93700A11559 /* RRScanner */,
-				038B98C523234E06007E3558 /* Main.storyboard */,
-				653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */,
-				653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */,
-				653F3B88234ADDAC00D0B4AA /* ConfirmScanViewController.swift */,
-				653F3B8A234B522B00D0B4AA /* AdditionalScanInfoViewController.swift */,
-				653F3B8C234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift */,
-				6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */,
-				6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */,
-				65EFBDE9232F36DE0032F578 /* InstructionsViewController.swift */,
-				653F3B8E234B5D3D00D0B4AA /* OrdersViewController.swift */,
-				038B98C823234E07007E3558 /* Assets.xcassets */,
-				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
-				038B98CD23234E07007E3558 /* Info.plist */,
-				037EE8DF2331036A00B36C15 /* SwiftScanner1-Bridging-Header.h */,
 				65C52737235A6AF200CCDB4D /* SwiftScanner1-Bridging-Header.h */,
 			);
 			path = SwiftScanner1;
@@ -459,6 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655F0B44235DC71C0019D90E /* AthleteObject.swift in Sources */,
+				655F0B42235D5C5F0019D90E /* ScanInstructionsViewController.swift in Sources */,
 				653F3B8D234B53E800D0B4AA /* PadSubmittedConfirmViewController.swift in Sources */,
 				653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */,
 				0331337F235AA98700A11559 /* ViewController+OpenGL.swift in Sources */,
@@ -663,7 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,7 +684,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -693,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -708,7 +714,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
