@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="440"/>
+            <point key="canvasLocation" x="869" y="499"/>
         </scene>
         <!--Item-->
         <scene sceneID="nL7-00-q1J">
@@ -261,7 +261,6 @@
                                 </state>
                                 <connections>
                                     <action selector="beginScanButton:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="hml-2Z-21J"/>
-                                    <segue destination="am2-H2-AUV" kind="show" identifier="beginScanToInstructs" id="17P-6s-EiP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Pad Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7j-v6-3hZ">
@@ -748,7 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fn4-72-meD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="4049"/>
+            <point key="canvasLocation" x="-574" y="4048"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="A6D-fn-hiK">
@@ -942,9 +941,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6oj-V2-KAi"/>
         <segue reference="N7g-u0-7Tb"/>
         <segue reference="oEu-7y-6Aj"/>
-        <segue reference="GXN-Jg-gUa"/>
-        <segue reference="xbX-VV-DtE"/>
+        <segue reference="nvw-kL-e3s"/>
     </inferredMetricsTieBreakers>
 </document>
