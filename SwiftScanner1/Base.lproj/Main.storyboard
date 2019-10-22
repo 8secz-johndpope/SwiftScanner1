@@ -10,56 +10,127 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
-        <scene sceneID="hNz-n2-bh7">
+        <!--Item-->
+        <scene sceneID="wfu-cE-DQo">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                <viewController id="y6V-Nn-hjW" customClass="FirstScanViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QSG-GM-y6L">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="437" y="362.5" width="150.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="415" y="413.5" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jy-eh-ugi">
-                                <rect key="frame" x="491" y="656" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chw-4S-Yx1">
+                                <rect key="frame" x="384" y="434" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="mScanButtonPressed:" destination="y6V-Nn-hjW" eventType="touchUpInside" id="Qef-sX-wTp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="appStatusMessageLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08H-Eo-CFp">
+                                <rect key="frame" x="491" y="345" width="189" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZK-VQ-m3b">
-                                <rect key="frame" x="777" y="362" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCk-RQ-Yli">
+                                <rect key="frame" x="560" y="198" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="resetButton"/>
                                 <connections>
-                                    <action selector="doneButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="i0P-fT-ksB"/>
+                                    <action selector="mResetButtonPressed:" destination="y6V-Nn-hjW" eventType="touchUpInside" id="SHT-Lv-5wM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-Jg-VbD">
+                                <rect key="frame" x="276" y="206" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="doneButton"/>
+                                <connections>
+                                    <action selector="mDoneButtonPressed:" destination="y6V-Nn-hjW" eventType="touchUpInside" id="9gk-gf-0Fx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="trackingLostLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUc-TB-uYP">
+                                <rect key="frame" x="508" y="132" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-TN-rRw">
+                                <rect key="frame" x="698" y="481" width="49" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="za7-6c-6s9">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2q2-CQ-gLp">
+                                        <rect key="frame" x="0.0" y="31" width="51" height="31"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EO7-VV-ofg">
+                                        <rect key="frame" x="0.0" y="62" width="51" height="31"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARY-cF-2i3">
+                                        <rect key="frame" x="0.0" y="93" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q85-aT-FGV">
+                                <rect key="frame" x="184" y="237" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cky-Fj-39W">
+                                <rect key="frame" x="184" y="489" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wjk-Tc-ro2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Hb0-1r-hUn"/>
+                    <connections>
+                        <outlet property="mAppStatusMessageLabel" destination="08H-Eo-CFp" id="t6k-Gj-Xdu"/>
+                        <outlet property="mCalibrationOverlay" destination="cky-Fj-39W" id="Lnv-Y5-1df"/>
+                        <outlet property="mDoneButton" destination="ClN-Jg-VbD" id="WyQ-8d-ot7"/>
+                        <outlet property="mEnableHighResMappingSwitch" destination="ARY-cF-2i3" id="kvt-xI-QUu"/>
+                        <outlet property="mEnableHighResolutionColorSwitch" destination="2q2-CQ-gLp" id="CAd-cJ-ylR"/>
+                        <outlet property="mEnableNewMapperSwitch" destination="EO7-VV-ofg" id="tNG-Xw-njE"/>
+                        <outlet property="mEnableNewTrackerSwitch" destination="za7-6c-6s9" id="rk3-ny-jwh"/>
+                        <outlet property="mEnableNewTrackerView" destination="SSd-TN-rRw" id="nXo-el-g0X"/>
+                        <outlet property="mEview" destination="QSG-GM-y6L" id="wgV-H3-Dbi"/>
+                        <outlet property="mInstructionOverlay" destination="q85-aT-FGV" id="gNq-Wy-lja"/>
+                        <outlet property="mResetButton" destination="hCk-RQ-Yli" id="MNV-x3-n6E"/>
+                        <outlet property="mScanButton" destination="Chw-4S-Yx1" id="Je3-ct-3kj"/>
+                        <outlet property="mTrackingLostLabel" destination="EUc-TB-uYP" id="WyS-J0-EMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvK-Z2-0dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.8515625" y="-962.5"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUX-49-T1V">
+                                <rect key="frame" x="518" y="326" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="mScanButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hfp-LO-Gep"/>
+                                    <action selector="myScanButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="A3m-S8-fLD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="doneButton" destination="WZK-VQ-m3b" id="72d-54-Qdb"/>
-                        <outlet property="tracklingLabelLost" destination="9jy-eh-ugi" id="RKr-kn-VtQ"/>
+                        <outlet property="mScanButton" destination="wUX-49-T1V" id="4kU-Zc-xG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -202,6 +273,7 @@
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="DP7-cZ-nvR" kind="relationship" relationship="viewControllers" id="NaT-VV-rzz"/>
+                        <segue destination="y6V-Nn-hjW" kind="relationship" relationship="viewControllers" id="dgt-Sz-seR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -941,9 +1013,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6oj-V2-KAi"/>
         <segue reference="N7g-u0-7Tb"/>
         <segue reference="oEu-7y-6Aj"/>
-        <segue reference="nvw-kL-e3s"/>
+        <segue reference="lzU-1b-eKA"/>
     </inferredMetricsTieBreakers>
 </document>

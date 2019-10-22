@@ -17,6 +17,7 @@
 		0331337E235AA98700A11559 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03313373235AA94E00A11559 /* MeshRenderer.swift */; };
 		0331337F235AA98700A11559 /* ViewController+OpenGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03313371235AA94D00A11559 /* ViewController+OpenGL.swift */; };
 		0333D092232C8F2500CE4EE3 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D091232C8F2500CE4EE3 /* XibView.swift */; };
+		0334067A235FB4D60057461C /* FirstScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03340679235FB4D60057461C /* FirstScanViewController.swift */; };
 		03504FBA2323D91F001EFB14 /* Structure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03504FB92323D91F001EFB14 /* Structure.framework */; };
 		0367DB5E2328930900FA872C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367DB5D2328930900FA872C /* libz.tbd */; };
 		038B98C023234E06007E3558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B98BF23234E06007E3558 /* AppDelegate.swift */; };
@@ -94,6 +95,7 @@
 		03313373235AA94E00A11559 /* MeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
 		03313375235AA94E00A11559 /* ViewController+SLAM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SLAM.swift"; sourceTree = "<group>"; };
 		0333D091232C8F2500CE4EE3 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		03340679235FB4D60057461C /* FirstScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScanViewController.swift; sourceTree = "<group>"; };
 		03504FB92323D91F001EFB14 /* Structure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Structure.framework; sourceTree = "<group>"; };
 		03504FC02323DA84001EFB14 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		0367DB5D2328930900FA872C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -235,6 +237,7 @@
 		038B98BE23234E06007E3558 /* SwiftScanner1 */ = {
 			isa = PBXGroup;
 			children = (
+				03340679235FB4D60057461C /* FirstScanViewController.swift */,
 				653F3B962351230300D0B4AA /* GlobalVariables.swift */,
 				038B98BF23234E06007E3558 /* AppDelegate.swift */,
 				6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */,
@@ -260,8 +263,8 @@
 				038B98CA23234E07007E3558 /* LaunchScreen.storyboard */,
 				038B98CD23234E07007E3558 /* Info.plist */,
 				037EE8DF2331036A00B36C15 /* SwiftScanner1-Bridging-Header.h */,
-				0331336B235AA93700A11559 /* RRScanner */,
 				038B98C123234E06007E3558 /* FirstViewController.swift */,
+				0331336B235AA93700A11559 /* RRScanner */,
 				03313372235AA94E00A11559 /* EAGLView.swift */,
 				03313373235AA94E00A11559 /* MeshRenderer.swift */,
 				0331336E235AA94D00A11559 /* MeshViewController.swift */,
@@ -469,6 +472,7 @@
 				03313379235AA98700A11559 /* EAGLView.swift in Sources */,
 				653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */,
 				0331337E235AA98700A11559 /* MeshRenderer.swift in Sources */,
+				0334067A235FB4D60057461C /* FirstScanViewController.swift in Sources */,
 				6551607323541D8B00D8AF0D /* RegisterPlayerViewController.swift in Sources */,
 				6551607123541B9F00D8AF0D /* ScanExistingViewController.swift in Sources */,
 				03313377235AA98700A11559 /* ViewController+SLAM.swift in Sources */,
@@ -667,7 +671,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7BPK5C72;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,7 +686,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
+				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -697,7 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC7BPK5C72;
+				DEVELOPMENT_TEAM = D5SLQ9UK26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -712,7 +716,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
+				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

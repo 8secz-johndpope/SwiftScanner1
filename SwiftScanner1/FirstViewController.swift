@@ -1,31 +1,31 @@
+////
+////  FirstViewController.swift
+////  SwiftScanner1
+////
+////  Created by Tim Skapek and Jackson Hubbard on 9/6/19.
+////  Copyright © 2019 Protect3d Inc. All rights reserved.
+////
 //
-//  FirstViewController.swift
-//  SwiftScanner1
+////import UIKit
+////
+////class FirstViewController: UIViewController {
+////
+////
+////    override func viewDidLoad() {
+////        super.viewDidLoad()
+////        // Do any additional setup after loading the view.
+////    }
+////
+////}
+////
+////
+////  ViewController.swift
+////  RRStructureScanner
+////
+////  Created by Christopher Worley on 12/16/17.
+////  Copyright © 2017 Ruthless Research, LLC. All rights reserved.
 //
-//  Created by Tim Skapek and Jackson Hubbard on 9/6/19.
-//  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
-
-//import UIKit
-//
-class FirstViewController: UIViewController {
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view.
-//    }
-//
-//}
-//
-//
-//  ViewController.swift
-//  RRStructureScanner
-//
-//  Created by Christopher Worley on 12/16/17.
-//  Copyright © 2017 Ruthless Research, LLC. All rights reserved.
-
-
 //import Foundation
 //import UIKit
 //import GLKit
@@ -203,12 +203,12 @@ class FirstViewController: UIViewController {
 //    @IBOutlet weak var enableNewMapperSwitch: UISwitch!
 //    @IBOutlet weak var enableHighResMappingSwitch: UISwitch!
 //
+//    @IBOutlet weak var mScanButton: UIButton!
 //    @IBOutlet weak var appStatusMessageLabel: UILabel!
-//    @IBOutlet weak var scanButton: UIButton!
 //    @IBOutlet weak var resetButton: UIButton!
 //    @IBOutlet weak var doneButton: UIButton!
 //    
-//    @IBOutlet weak var tracklingLabelLost: UILabel!
+//    @IBOutlet weak var trackingLostLabel: UILabel!
 //    @IBOutlet weak var enableNewTrackerView: UIView!
 //    @IBOutlet weak var instructionOverlay: UIView!
 //    @IBOutlet weak var calibrationOverlay: UIView!
@@ -448,19 +448,19 @@ class FirstViewController: UIViewController {
 //        meshViewController.volumeCenter = volumeCenter
 //        meshViewController.delegate = self
 //
-//        scanButton.isHidden = false
+//        mScanButton.isHidden = false
 //        resetButton.isHidden = true
 //    }
 //
 //    func enterCubePlacementState() {
 //
 //        // Switch to the Scan button.
-//        scanButton.isHidden = false
+//        mScanButton.isHidden = false
 //        resetButton.isHidden = true
 //        doneButton.isHidden = true
 //
 //        // We'll enable the button only after we get some initial pose.
-//        scanButton.isEnabled = true
+//        mScanButton.isEnabled = true
 //
 //        // Cannot be lost in cube placement mode.
 //        trackingLostLabel.isHidden = true
@@ -484,7 +484,7 @@ class FirstViewController: UIViewController {
 //        }
 //
 //        // Switch to the Done button.
-//        scanButton.isHidden = true
+//        mScanButton.isHidden = true
 //        doneButton.isHidden = false
 //        resetButton.isHidden = false
 //
@@ -514,7 +514,7 @@ class FirstViewController: UIViewController {
 //        updateAppStatusMessage()
 //
 //        // Hide the Scan/Done/Reset button.
-//        scanButton.isHidden = true
+//        mScanButton.isHidden = true
 //        doneButton.isHidden = true
 //        resetButton.isHidden = true
 //
@@ -669,13 +669,17 @@ class FirstViewController: UIViewController {
 //        _display!.cubeRenderer!.adjustCubeSize(_slamState.volumeSizeInMeters)
 //    }
 //
-//    @IBAction func scanButtonPressed(_ sender: UIButton) {
-//        // hide windows while scanning
-//        trackerShowingScanStart =  !enableNewTrackerView.isHidden
-//
-//        toggleTracker(show: false)
-//        enterScanningState()
-//    }
+//    
+//  
+//    
+//    
+////    @IBAction func mScanButtonPressed(_ sender: UIButton) {
+////    // hide windows while scanning
+////        trackerShowingScanStart =  !enableNewTrackerView.isHidden
+////
+////        toggleTracker(show: false)
+////        enterScanningState()
+////    }
 //
 //    @IBAction func resetButtonPressed(_ sender: UIButton) {
 //        // restore window after scanning
@@ -1020,5 +1024,5 @@ class FirstViewController: UIViewController {
 //            // not much we can do here
 //            break
 //        }
-    }
-
+//    }
+//}
