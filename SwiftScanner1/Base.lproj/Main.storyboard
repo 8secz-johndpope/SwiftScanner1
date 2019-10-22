@@ -261,6 +261,7 @@
                                 </state>
                                 <connections>
                                     <action selector="beginScanButton:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="hml-2Z-21J"/>
+                                    <segue destination="am2-H2-AUV" kind="show" identifier="beginScanToInstructs" id="pNq-AO-vkE"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Pad Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7j-v6-3hZ">
@@ -675,31 +676,19 @@
                                 <rect key="frame" x="74" y="138" width="875" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PadCell" id="Bmr-hi-qPF" customClass="ScanOrderTableViewCell" customModule="SwiftScanner1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customPadCell" id="bYe-T8-cXg">
                                         <rect key="frame" x="0.0" y="28" width="875" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bmr-hi-qPF" id="IEH-4b-BE1">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bYe-T8-cXg" id="ZzY-J2-BYz">
                                             <rect key="frame" x="0.0" y="0.0" width="875" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RG-Zw-2Px">
-                                                    <rect key="frame" x="58" y="29" width="42" height="22"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="8RG-Zw-2Px" secondAttribute="bottom" constant="18" id="Hrc-Yq-wEk"/>
-                                                <constraint firstItem="8RG-Zw-2Px" firstAttribute="leading" secondItem="IEH-4b-BE1" secondAttribute="leadingMargin" constant="43" id="PMc-Sn-9jX"/>
-                                                <constraint firstItem="8RG-Zw-2Px" firstAttribute="top" secondItem="IEH-4b-BE1" secondAttribute="topMargin" constant="18" id="uwZ-z7-cA2"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="padLabel" destination="8RG-Zw-2Px" id="OAX-bw-Dk9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Dc-g6-Uql" id="jEZ-89-s6s"/>
+                                    <outlet property="delegate" destination="8Dc-g6-Uql" id="pln-9k-4lM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -711,6 +700,7 @@
                     <tabBarItem key="tabBarItem" title="Orders" id="usA-Hy-WvV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="padOrdersTable" destination="OJ5-Hz-SWC" id="wz7-DO-HgY"/>
                         <outlet property="tableView" destination="OJ5-Hz-SWC" id="iIa-ov-IuF"/>
                     </connections>
                 </viewController>
@@ -737,6 +727,16 @@
                                 <rect key="frame" x="75" y="146" width="875" height="556"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customPadCell" id="jnP-m7-e5K">
+                                        <rect key="frame" x="0.0" y="28" width="875" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jnP-m7-e5K" id="C4v-UT-E93">
+                                            <rect key="frame" x="0.0" y="0.0" width="875" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -941,9 +941,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6oj-V2-KAi"/>
         <segue reference="N7g-u0-7Tb"/>
         <segue reference="oEu-7y-6Aj"/>
+        <segue reference="pNq-AO-vkE"/>
         <segue reference="nvw-kL-e3s"/>
     </inferredMetricsTieBreakers>
 </document>
