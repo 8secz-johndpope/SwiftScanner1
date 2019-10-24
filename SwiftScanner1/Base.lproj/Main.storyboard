@@ -14,7 +14,7 @@
         <scene sceneID="wfu-cE-DQo">
             <objects>
                 <viewController id="y6V-Nn-hjW" customClass="FirstScanViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QSG-GM-y6L">
+                    <view key="view" contentMode="scaleToFill" id="QSG-GM-y6L" customClass="EAGLView" customModule="SwiftScanner1" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
