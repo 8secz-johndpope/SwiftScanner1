@@ -12,6 +12,7 @@ extension FirstScanViewController {
     
     func setupGL() {
         
+        print("test")
         // Create an EAGLContext for our EAGLView.
         _display?.context = EAGLContext.init(api: .openGLES2)
         

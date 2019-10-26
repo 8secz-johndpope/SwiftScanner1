@@ -58,11 +58,14 @@ extension FirstScanViewController {
         _slamState.tracker = STTracker.init(scene: _slamState.scene!, options: trackerOptions)
         
         // Default volume size set in options struct
+
         if _slamState.volumeSizeInMeters.x.isNaN {
             _slamState.volumeSizeInMeters = _options.initVolumeSizeInMeters
         }
 
+
         // Setup the cube placement initializer.
+        print(_slamState.volumeSizeInMeters)
         _slamState.cameraPoseInitializer = STCameraPoseInitializer.init(volumeSizeInMeters: _slamState.volumeSizeInMeters, options: [kSTCameraPoseInitializerStrategyKey: STCameraPoseInitializerStrategy.tableTopCube.rawValue])
         
         // Set up the cube renderer with the current volume size.
