@@ -1,16 +1,19 @@
 //
-//  ScanOrderTableViewCell.swift
+//  OrderStatusTableViewCell.swift
 //  SwiftScanner1
 //
-//  Created by Jackson Hubbard on 10/7/19.
+//  Created by Jackson Hubbard on 10/26/19.
 //  Copyright © 2019 Protect3d Inc. All rights reserved.
 //
 
 import UIKit
 
-class ScanOrderTableViewCell: UITableViewCell {
+class OrderStatusTableViewCell: UITableViewCell {
 
-    
+    @IBOutlet weak var athleteLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var padTypeLabel: UILabel!
+    @IBOutlet weak var orderStatusLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,15 +25,5 @@ class ScanOrderTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
 
-    
-
-    
-    // will set properties of current Pad
-    func setPad(pad: Pad) {
-       // padLabel.text =  pad.name
-        
-    }
 }

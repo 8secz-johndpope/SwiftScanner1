@@ -49,10 +49,7 @@ class OrderStatusViewController: UITableViewController {
 //        return cell
 //    }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        padOrdersTable.reloadData()
-//    }
+
     
     
     
@@ -65,13 +62,27 @@ class OrderStatusViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath) as! OrderStatusTableViewCell
         
-        cell.textLabel?.text = all_pads[indexPath.row].name
-        cell.detailTextLabel?.text = all_pads[indexPath.row].orderStatus
+        cell.athleteLabel?.text = all_pads[indexPath.row].name
+        cell.numberLabel?.text = String(all_pads[indexPath.row].number)
+        cell.padTypeLabel?.text = all_pads[indexPath.row].padType
+        cell.orderStatusLabel?.text = all_pads[indexPath.row].orderStatus
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        let sectionName = "Order Statuses"
+    
+        return sectionName
+    }
+    
+    // not sure about this one
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            padOrdersTable.reloadData()
+        }
     
     // appendPad will return [] of type Pad which stores all orders
 //    func appendPad() -> [Pad] {

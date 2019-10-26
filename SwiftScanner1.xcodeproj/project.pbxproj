@@ -43,7 +43,6 @@
 		038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990C23235B4A007E3558 /* QuartzCore.framework */; };
 		038B990F23235B53007E3558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990E23235B53007E3558 /* UIKit.framework */; };
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
-		65215E5923647F0100AC37E6 /* OrderStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */; };
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
 		653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */; };
@@ -59,6 +58,7 @@
 		6551607323541D8B00D8AF0D /* RegisterPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */; };
 		655F0B42235D5C5F0019D90E /* ScanInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */; };
 		655F0B44235DC71C0019D90E /* AthleteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0B43235DC71C0019D90E /* AthleteObject.swift */; };
+		656EF53723648D68003E30C6 /* OrderStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */; };
 		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
 		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
 		65C5272D2359415600CCDB4D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527282359415600CCDB4D /* libz.1.2.5.tbd */; };
@@ -130,7 +130,6 @@
 		038B990C23235B4A007E3558 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		038B990E23235B53007E3558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusTableViewController.swift; sourceTree = "<group>"; };
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +145,7 @@
 		6551607223541D8B00D8AF0D /* RegisterPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPlayerViewController.swift; sourceTree = "<group>"; };
 		655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInstructionsViewController.swift; sourceTree = "<group>"; };
 		655F0B43235DC71C0019D90E /* AthleteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteObject.swift; sourceTree = "<group>"; };
+		656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusTableViewCell.swift; sourceTree = "<group>"; };
 		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
 		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
 		65C527282359415600CCDB4D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -251,9 +251,9 @@
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
-				65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
+				656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */,
 				655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */,
 				653F3B92234B668900D0B4AA /* ScanOrderTableViewCell.swift */,
 				653F3B90234B62AC00D0B4AA /* PadDatabaseViewController.swift */,
@@ -473,7 +473,6 @@
 				653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */,
 				0331337F235AA98700A11559 /* ViewController+OpenGL.swift in Sources */,
 				03313379235AA98700A11559 /* EAGLView.swift in Sources */,
-				65215E5923647F0100AC37E6 /* OrderStatusTableViewController.swift in Sources */,
 				653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */,
 				0331337E235AA98700A11559 /* MeshRenderer.swift in Sources */,
 				0334067A235FB4D60057461C /* FirstScanViewController.swift in Sources */,
@@ -485,6 +484,7 @@
 				653F3B91234B62AC00D0B4AA /* PadDatabaseViewController.swift in Sources */,
 				0331337C235AA98700A11559 /* ScannerExtensions.swift in Sources */,
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
+				656EF53723648D68003E30C6 /* OrderStatusTableViewCell.swift in Sources */,
 				653F3B8F234B5D3D00D0B4AA /* OrdersViewController.swift in Sources */,
 				653F3B93234B668900D0B4AA /* ScanOrderTableViewCell.swift in Sources */,
 				653F3B8B234B522B00D0B4AA /* AdditionalScanInfoViewController.swift in Sources */,
@@ -675,7 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -705,7 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D5SLQ9UK26;
+				DEVELOPMENT_TEAM = CC7BPK5C72;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -720,7 +720,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = protect3d.SwiftScanner1;
+				PRODUCT_BUNDLE_IDENTIFIER = "protect3d.SwiftScanner1-JH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftScanner1/SwiftScanner1-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
