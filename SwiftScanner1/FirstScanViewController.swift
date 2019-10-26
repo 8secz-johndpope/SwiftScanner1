@@ -307,6 +307,8 @@ class FirstScanViewController: UIViewController, STBackgroundTaskDelegate, MeshV
         initializeDynamicOptions()
         syncUIfromDynamicOptions()
         
+        setupSLAM()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -370,6 +372,7 @@ class FirstScanViewController: UIViewController, STBackgroundTaskDelegate, MeshV
         
         // This method ensures the UI reflects the dynamic settings.
         mEnableNewTrackerSwitch.isOn = _dynamicOptions.newTrackerIsOn
+       
         mEnableNewTrackerSwitch.isEnabled = _dynamicOptions.newTrackerSwitchEnabled
         
         mEnableHighResMappingSwitch.isOn = _dynamicOptions.highResMapping
@@ -482,6 +485,7 @@ class FirstScanViewController: UIViewController, STBackgroundTaskDelegate, MeshV
     func enterScanningState() {
         
         // This can happen if the UI did not get updated quickly enough.
+        print("TS Debug: \(_slamState.cameraPoseInitializer!.lastOutput.cameraPose.__Anonymous_field0)")
         if !_slamState.cameraPoseInitializer!.lastOutput.hasValidPose.boolValue {
             print("Warning: not accepting to enter into scanning state since the initial pose is not valid.")
             return
