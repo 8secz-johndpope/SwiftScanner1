@@ -333,6 +333,7 @@
                                 </state>
                                 <connections>
                                     <action selector="beginScanButton:" destination="hXJ-xd-Fck" eventType="touchUpInside" id="hml-2Z-21J"/>
+                                    <segue destination="am2-H2-AUV" kind="show" identifier="beginScanToInstructs" id="Yrx-Hw-k05"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Pad Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7j-v6-3hZ">
@@ -514,7 +515,7 @@
                                 <state key="normal" title="Orders"/>
                                 <connections>
                                     <action selector="ordersButton:" destination="Ctw-O4-0MP" eventType="touchUpInside" id="HRT-o1-a7Q"/>
-                                    <segue destination="6E4-sW-POF" kind="show" identifier="PadSubmittedToOrdersSegue" id="N7g-u0-7Tb"/>
+                                    <segue destination="bMZ-8x-jS2" kind="show" identifier="PadSubmittedToOrdersSegue" id="Gdr-oW-lPv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKC-tv-IbN">
@@ -731,7 +732,7 @@
         <!--Orders-->
         <scene sceneID="CeX-ul-3mh">
             <objects>
-                <viewController id="6E4-sW-POF" customClass="OrderStatusViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6E4-sW-POF" customClass="UITableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Dc-g6-Uql">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -772,6 +773,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Dc-g6-Uql" id="lmZ-PY-noF"/>
+                                    <outlet property="delegate" destination="8Dc-g6-Uql" id="oFc-Ql-BqA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -783,12 +788,60 @@
                     <tabBarItem key="tabBarItem" title="Orders" id="usA-Hy-WvV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="OJ5-Hz-SWC" id="iIa-ov-IuF"/>
+                        <outlet property="padOrdersTable" destination="OJ5-Hz-SWC" id="Z76-8b-JYm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPf-ba-7s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="230" y="4049"/>
+        </scene>
+        <!--Order Status View Controller-->
+        <scene sceneID="PRb-b7-sxl">
+            <objects>
+                <tableViewController id="bMZ-8x-jS2" customClass="OrderStatusViewController" customModule="SwiftScanner1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oDV-7L-LaH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customPadCell" textLabel="TWj-o5-P4i" detailTextLabel="1SZ-Ht-0rN" style="IBUITableViewCellStyleValue1" id="knZ-fE-ddR">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="knZ-fE-ddR" id="pMC-UL-e22">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TWj-o5-P4i">
+                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1SZ-Ht-0rN">
+                                            <rect key="frame" x="960" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bMZ-8x-jS2" id="02e-mh-Ips"/>
+                            <outlet property="delegate" destination="bMZ-8x-jS2" id="tZ7-hd-NkQ"/>
+                            <outlet property="prefetchDataSource" destination="bMZ-8x-jS2" id="cBg-uF-Nj0"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="padOrdersTable" destination="oDV-7L-LaH" id="9ts-Pl-8Qy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jO4-JC-Nhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.99999999999997" y="4822.65625"/>
         </scene>
         <!--Pad Database-->
         <scene sceneID="LWK-ut-ao0">
@@ -1013,8 +1066,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N7g-u0-7Tb"/>
         <segue reference="oEu-7y-6Aj"/>
+        <segue reference="Yrx-Hw-k05"/>
         <segue reference="lzU-1b-eKA"/>
     </inferredMetricsTieBreakers>
 </document>

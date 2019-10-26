@@ -13,9 +13,14 @@ class OrderStatusViewController: UITableViewController {
      
     // initialize an empty array of type Pad
     // as orders come in, add pads to this
-    var pads: [Pad] = []
+    //var pads: [Pad] = []
     
-    @IBOutlet weak var padOrdersTable: UITableView!
+    
+   // @IBOutlet weak var padOrdersTable: UITableView!
+    
+    
+    @IBOutlet var padOrdersTable: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,22 +38,39 @@ class OrderStatusViewController: UITableViewController {
     
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pads.count
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return pads.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath)
+//        print(pads[indexPath.item].name)
+//        cell.textLabel?.text = pads[indexPath.item].name
+//        return cell
+//    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        padOrdersTable.reloadData()
+//    }
+    
+    
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-   
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return all_pads.count
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath)
-        cell.textLabel?.text = pads[indexPath.item].name
+        
+        cell.textLabel?.text = all_pads[indexPath.row].name
+        cell.detailTextLabel?.text = all_pads[indexPath.row].orderStatus
         return cell
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        padOrdersTable.reloadData()
-    }
-    
-    
     
     
     // appendPad will return [] of type Pad which stores all orders

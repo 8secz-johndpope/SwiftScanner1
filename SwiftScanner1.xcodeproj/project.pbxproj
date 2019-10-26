@@ -43,6 +43,7 @@
 		038B990D23235B4A007E3558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990C23235B4A007E3558 /* QuartzCore.framework */; };
 		038B990F23235B53007E3558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B990E23235B53007E3558 /* UIKit.framework */; };
 		038B991123235B5F007E3558 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B991023235B5F007E3558 /* VideoToolbox.framework */; };
+		65215E5923647F0100AC37E6 /* OrderStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */; };
 		653829FE232C4731002AA380 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FD232C4730002AA380 /* UserInputViewController.swift */; };
 		65382A00232C4A08002AA380 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653829FF232C4A08002AA380 /* ScanViewController.swift */; };
 		653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */; };
@@ -129,6 +130,7 @@
 		038B990C23235B4A007E3558 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		038B990E23235B53007E3558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		038B991023235B5F007E3558 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusTableViewController.swift; sourceTree = "<group>"; };
 		653829FD232C4730002AA380 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		653829FF232C4A08002AA380 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
+				65215E5823647F0100AC37E6 /* OrderStatusTableViewController.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				655F0B41235D5C5F0019D90E /* ScanInstructionsViewController.swift */,
@@ -470,6 +473,7 @@
 				653F3B95234B67DE00D0B4AA /* PadObject.swift in Sources */,
 				0331337F235AA98700A11559 /* ViewController+OpenGL.swift in Sources */,
 				03313379235AA98700A11559 /* EAGLView.swift in Sources */,
+				65215E5923647F0100AC37E6 /* OrderStatusTableViewController.swift in Sources */,
 				653F3B87234ADD2C00D0B4AA /* OrderStatusViewController.swift in Sources */,
 				0331337E235AA98700A11559 /* MeshRenderer.swift in Sources */,
 				0334067A235FB4D60057461C /* FirstScanViewController.swift in Sources */,

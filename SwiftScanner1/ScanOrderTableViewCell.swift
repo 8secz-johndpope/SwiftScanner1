@@ -23,6 +23,7 @@ class ScanOrderTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var padLabel: UILabel!
+    
 
     
     // will set properties of current Pad
