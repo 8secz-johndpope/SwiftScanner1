@@ -18,11 +18,11 @@ class ConfirmScanViewController: UIViewController {
     
 
     @IBAction func redoScanButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "redoScanFromConfirmSegue", sender: self)
+        //performSegue(withIdentifier: "redoScanFromConfirmSegue", sender: self)
     }
     
     @IBAction func confirmScanButton(_ sender: Any) {
-        performSegue(withIdentifier: "confirmToExtraInfoSegue", sender: self)
+        //performSegue(withIdentifier: "confirmToExtraInfoSegue", sender: self)
 
     }
     

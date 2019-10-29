@@ -17,10 +17,32 @@ class ScanHomePageViewController: UIViewController {
     }
     
    
-    
+    // only need this when we dont use a UINavigationConroller
+    // think we want to have Navigation controller so we can have back buttons and make it easy to navigate
+    // instead use prepare
     @IBAction func scanNewButton(_ sender: Any) {
-        performSegue(withIdentifier: "scanNewtoUserInput", sender: self) 
+        //performSegue(withIdentifier: "scanNewtoUserInput", sender: self)
+        //prepare(for: "scanNewtoUserInput", sender: self)
+        //prepare(for: scanNewtoUserInput, sender: self)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "scanNewtoUserInput" {
+            let nextViewController = segue.destination as? UserInputViewController
+                // set some values to send to next VC
+                // UserInputVC.athlete = ______
+            
+            
+            }
+        if segue.identifier == "scanExistingToInfo" {
+            let nextViewController = segue.destination as? ScanExistingViewController
+                //set some values to send to next VC
+            
+            
+        }
+    }
+    
     
     @IBAction func scanExistingButton(_ sender: Any) {
          performSegue(withIdentifier: "scanExistingToInfo", sender: self)

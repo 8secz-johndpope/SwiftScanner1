@@ -42,6 +42,8 @@ class OrderStatusViewController: UITableViewController {
 //        return pads.count
 //    }
 //
+    
+    
 //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath)
 //        print(pads[indexPath.item].name)
@@ -49,8 +51,44 @@ class OrderStatusViewController: UITableViewController {
 //        return cell
 //    }
     
-
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section \(section)"
+    }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView = UIView()
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: "headers") as! OrderStatusHeaderTableViewCell
+        headerView.addSubview(headerCell)
+        headerCell.backgroundColor = .lightGray
+        headerView.autoresizingMask = []
+        
+
+        //cell.backgroundColor = .blueColor()
+        //headercell.athleteHeader?.text = "Athlete"
+        
+        return headerView
+    }
+    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        sizeHeaderToFit()
+//    }
+//    
+//    func sizeHeaderToFit() {
+//        let headerView = padOrdersTable!
+//        
+//        headerView.setNeedsLayout()
+//        headerView.layoutIfNeeded()
+//        
+//        let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+//        
+//        var frame = headerView.frame
+//        frame.size.height = height
+//        headerView.frame = frame
+//        
+//        padOrdersTable.tableHeaderView = headerView
+//    }
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,6 +100,11 @@ class OrderStatusViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        athleteHeader.text = "Athlete"
+//        numberHeader.text = "Number"
+//        padTypeHeader.text = "Pad Type"
+//        orderStatusHeader.text = "Order Status"
+//
         let cell = tableView.dequeueReusableCell(withIdentifier: "customPadCell", for: indexPath) as! OrderStatusTableViewCell
         
         cell.athleteLabel?.text = all_pads[indexPath.row].name
@@ -71,17 +114,17 @@ class OrderStatusViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        let sectionName = "Order Statuses"
+
     
-        return sectionName
-    }
+    
+        
     
     // not sure about this one
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
             padOrdersTable.reloadData()
+            //sizeHeaderToFit()
+
         }
     
     // appendPad will return [] of type Pad which stores all orders
@@ -128,3 +171,21 @@ class OrderStatusViewController: UITableViewController {
 //
     
 }
+
+
+//extension UITableViewController {
+//    func sizeHeaderToFit() {
+//        if let headerView = tableView.tableHeaderView {
+//
+//            headerView.setNeedsLayout()
+//            headerView.layoutIfNeeded()
+//
+//            let height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+//            var frame = headerView.frame
+//            frame.size.height = height
+//            headerView.frame = frame
+//
+//            tableView.tableHeaderView = headerView
+//        }
+//      }
+//  }

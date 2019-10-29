@@ -24,11 +24,22 @@ class ScanInstructionsViewController: UIViewController {
     
     @IBOutlet weak var instructionsMessage: UITextField!
     
+    
     @IBAction func beginScanButton(_ sender: Any) {
-        performSegue(withIdentifier: "instructionsToFirstScanner", sender: self)
+        //performSegue(withIdentifier: "instructionsToFirstScanner", sender: self)
     }
     
+    // example prepare command
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // if segue.identifier == "scanNewtoUserInput" {
+            let nextViewController = segue.destination as? UserInputViewController
+            // set some values to send to next VC
+            // UserInputVC.athlete = ______
+            
+            
+            //}
     
+    }
     
 
     /*

@@ -61,6 +61,7 @@
 		656EF53723648D68003E30C6 /* OrderStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */; };
 		6584D6972339C62F0021FFE0 /* StartUpAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */; };
 		6584D6992339C9FC0021FFE0 /* ScanHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */; };
+		659C82BF2366035700F386C7 /* OrderStatusHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C82BE2366035700F386C7 /* OrderStatusHeaderTableViewCell.swift */; };
 		65C5272D2359415600CCDB4D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527282359415600CCDB4D /* libz.1.2.5.tbd */; };
 		65C5272E2359415600CCDB4D /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C527292359415600CCDB4D /* libz.1.2.8.tbd */; };
 		65C5272F2359415600CCDB4D /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5272A2359415600CCDB4D /* libz.1.tbd */; };
@@ -148,6 +149,7 @@
 		656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusTableViewCell.swift; sourceTree = "<group>"; };
 		6584D6962339C62F0021FFE0 /* StartUpAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAuthViewController.swift; sourceTree = "<group>"; };
 		6584D6982339C9FC0021FFE0 /* ScanHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHomePageViewController.swift; sourceTree = "<group>"; };
+		659C82BE2366035700F386C7 /* OrderStatusHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		65C527282359415600CCDB4D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		65C527292359415600CCDB4D /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		65C5272A2359415600CCDB4D /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
@@ -251,6 +253,7 @@
 				653829FF232C4A08002AA380 /* ScanViewController.swift */,
 				038B98C323234E06007E3558 /* SecondViewController.swift */,
 				653F3B86234ADD2C00D0B4AA /* OrderStatusViewController.swift */,
+				659C82BE2366035700F386C7 /* OrderStatusHeaderTableViewCell.swift */,
 				0333D091232C8F2500CE4EE3 /* XibView.swift */,
 				038B98C523234E06007E3558 /* Main.storyboard */,
 				656EF53623648D68003E30C6 /* OrderStatusTableViewCell.swift */,
@@ -486,6 +489,7 @@
 				038B98C423234E06007E3558 /* SecondViewController.swift in Sources */,
 				656EF53723648D68003E30C6 /* OrderStatusTableViewCell.swift in Sources */,
 				653F3B8F234B5D3D00D0B4AA /* OrdersViewController.swift in Sources */,
+				659C82BF2366035700F386C7 /* OrderStatusHeaderTableViewCell.swift in Sources */,
 				653F3B93234B668900D0B4AA /* ScanOrderTableViewCell.swift in Sources */,
 				653F3B8B234B522B00D0B4AA /* AdditionalScanInfoViewController.swift in Sources */,
 				038B98C023234E06007E3558 /* AppDelegate.swift in Sources */,
