@@ -18,9 +18,31 @@ class StartUpAuthViewController: UIViewController {
     
 
     @IBAction func loginButton(_ sender: Any) {
-        performSegue(withIdentifier: "loginToHome", sender: self)
+        //performSegue(withIdentifier: "loginToHome", sender: self)
+            self.loadTabBarController(atIndex: 1)
 
     }
+    
+    // when user presses orders button, want to segue to orders table, but need to include tab bar
+    // code below allows this segue to happen
+    var tabBarIndex: Int?
+    
+    //function that will trigger the **MODAL** segue
+    private func loadTabBarController(atIndex: Int){
+        self.tabBarIndex = atIndex
+        self.performSegue(withIdentifier: "loginToHome", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "loginToHome" {
+            let tabbarController = segue.destination as! UITabBarController
+            tabbarController.selectedIndex = self.tabBarIndex!
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
