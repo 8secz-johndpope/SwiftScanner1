@@ -32,7 +32,7 @@ class ScanInstructionsViewController: UIViewController {
     // example prepare command
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // if segue.identifier == "scanNewtoUserInput" {
-            let nextViewController = segue.destination as? UserInputViewController
+            //let nextViewController = segue.destination as? UserInputViewController
             // set some values to send to next VC
             // UserInputVC.athlete = ______
             
