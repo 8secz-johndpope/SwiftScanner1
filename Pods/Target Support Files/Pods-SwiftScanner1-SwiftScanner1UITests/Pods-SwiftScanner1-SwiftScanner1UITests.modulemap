@@ -1,0 +1,6 @@
+framework module Pods_SwiftScanner1_SwiftScanner1UITests {
+  umbrella header "Pods-SwiftScanner1-SwiftScanner1UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
