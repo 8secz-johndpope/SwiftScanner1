@@ -302,8 +302,8 @@ class FirstScanViewController: UIViewController, STBackgroundTaskDelegate, MeshV
         _useColorCamera = STSensorController.approximateCalibrationGuaranteedForDevice()
         
         // Make sure we get notified when the app becomes active to start/restore the sensor state if necessary.
-        NotificationCenter.default.addObserver(self, selector: #selector(FirstScanViewController.appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
+       // NotificationCenter.default.addObserver(self, selector: #selector(FirstScanViewController.appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        appDidBecomeActive()
         initializeDynamicOptions()
         syncUIfromDynamicOptions()
         
@@ -349,15 +349,19 @@ class FirstScanViewController: UIViewController, STBackgroundTaskDelegate, MeshV
     }
     
     @objc func appDidBecomeActive() {
-        
+        print("TS Debug: 1")
         if currentStateNeedsSensor() {
             let _ = connectToStructureSensorAndStartStreaming()
+            print("TS Debug: 2")
+
         }
         
         // Abort the current scan if we were still scanning before going into background since we
         // are not likely to recover well.
         if _slamState.scannerState == .scanning {
             mResetButtonPressed(mResetButton)
+            print("TS Debug: 3")
+
         }
     }
     
